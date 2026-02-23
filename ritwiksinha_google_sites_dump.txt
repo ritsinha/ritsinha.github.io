@@ -1,0 +1,471 @@
+Ritwik Sinha Google Sites (content dump)
+Source site: https://sites.google.com/site/ritwiksinha/home
+Fetched: 2026-02-22 (America/Los_Angeles)
+
+================================================================================
+PAGE: Home
+URL: https://sites.google.com/site/ritwiksinha/home
+
+# Ritwik Sinha's Home
+
+This is the personal page of Ritwik Sinha. Click here for my official webpage (research.adobe.com).
+
+At this location, you will get to know me a little. Please note that this page is and will perpetually remain under construction.
+
+Find me on Social Media
+- LinkedIn (www.linkedin.com)
+
+Contact
+- ritwik.sinha AT gmail DOT com
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PAGE: Work
+URL: https://sites.google.com/site/ritwiksinha/work
+
+# Research
+
+I am an Applied Statistician and Data Scientist. As a Statistician, I have had good fortune of working on data from many different domains. I have peer reviewed publications in Genetics, Clinical Trials, Medicine, Marketing, Computer Science and Geology.
+
+I am currently working as a Principal Research Data Scientist with Adobe Research in San Jose, CA.
+
+Links
+- My Adobe Research page can be found here: research.adobe.com
+- A curriculum vitae can be found here: drive.google.com
+- My Google Scholar page is here: scholar.google.com
+
+Contact
+- ritwik.sinha AT gmail DOT com
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PAGE: Work / Publications
+URL: https://sites.google.com/site/ritwiksinha/work/publications
+
+# Peer Reviewed Publications
+Reverse Chronological Order
+
+In, Y, Kim, S, Rossi, R, Tanjim, M, Yu, T, Sinha, R, Park, C, Kim, K (2025)
+Diversify-verify-adapt: Efficient and Robust Retrieval-Augmented Ambiguous Question Answering.
+In 2025 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL).
+
+Zhou, M, Abhishek, V, Kennedy, E, Srinivasan, K, Sinha, R (2025)
+Linking Clicks to Bricks: Understanding the Effects of Email Advertising on Multichannel Sales.
+In Information Systems Research 36(1): 225-238.
+
+Shankar, S, Sinha, R, Fiterau, M (2024)
+On LLM Augmented A/B Experimentation.
+In Causality and Large Models Workshop at NeurIPS.
+
+Kadel, J, See, A, Sinha, R, Fischer, M (2024)
+BOTracle: A Framework for Discriminating Bots and Humans.
+In International Workshops of the European Symposium on Research in Computer Security (ESORICS-W).
+
+Shankar, S, Sinha, R, Fiterau, M (2024)
+On Online Experimentation without Device Identifiers.
+In International Conference on Machine Learning (ICML), PMLR Vol. 235.
+
+Zeng, Z, Arbour, D, Feller, A, Addanki, R, Rossi, R, Sinha, R, Kennedy, E (2024)
+Continuous Treatment Effects with Surrogate Outcomes.
+In International Conference on Machine Learning (ICML), PMLR Vol. 235, pp. 58306-58328.
+
+Shankar, S, Sinha, R, Fiterau, M (2024)
+Online Experimentation under Privacy-Induced Identity Fragmentation.
+In Privacy Regulation and Protection in Machine Learning Workshop at ICLR.
+
+Shankar, S, Sinha, R, Chandak, Y, Mitra, S, Fiterau, M (2024)
+A/B Testing under Interference with Partial Network Information.
+In International Conference on Artificial Intelligence and Statistics (AISTATS), PMLR Vol. 238, pp. 19-27.
+
+Tanjim, M, Singh, K, Kafle, K, Sinha, R, Cottrell, G (2024)
+Discovering and Mitigating Biases in CLIP-based Image Editing.
+In IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
+
+Black, A, Jenni, S, Bui, T, Tanjim, MM, Petrangeli, S, Sinha, R, Vishwanathan V, Collomosse, J (2023)
+VADER: Video Alignment Differencing and Retrieval.
+In Proceedings of the International Conference on Computer Vision 2023.
+
+Shankar, S, Sinha, R, Mitra, S, Sinha, M, Fiterau, M (2023)
+Direct Inference of Effect of Treatment (DIET) for a Cookieless World.
+In International Conference on Artificial Intelligence and Statistics (pp. 1869-1887). PMLR.
+
+Shankar, S, Sinha, R, Mitra, S, Swaminathan, V, Mahadevan, S, Sinha, M (2023)
+Privacy Aware Experiments without Cookies.
+In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (pp. 1144-1147).
+
+Atrey, A, Sinha, R, Mitra, S, Shenoy, P (2023)
+Protecting Proprietary Information in on-Device Machine Learning Models.
+In Proceedings of the 24th International Workshop on Mobile Computing Systems and Applications (pp. 138-138).
+
+Maharaj, AV, Sinha, R, Arbour, D, Waudby-Smith, I, Liu, SZ, Sinha, M, Addanki, R, Ramdas, A, Garg, M, Swaminathan, V (2023)
+Anytime-Valid Confidence Sequences in an Enterprise A/B Testing Platform.
+In Proceedings of The Web Conference.
+
+Mittal, T, Sinha, R, Swaminathan, V, Collomosse, J, Manocha, D (2023)
+Video Manipulations Beyond Faces: A Dataset with Human-Machine Analysis.
+In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (pp. 643-652).
+
+Guhan, P, Mitra, S, Sarkhel, S, Petrangeli, S, Sinha, R, Swaminathan, V, Bera, A, Manocha, D (2022)
+Contextualized Styling of Images for Web Interfaces using Reinforcement Learning.
+In IEEE International Symposium on Multimedia (ISM) (pp. 169-172). IEEE.
+
+Atrey, A, Sinha, R, Sarkhel, S, Mitra, S, Arbour, D, Maharaj, A, Shenoy, P (2022)
+Towards Preserving Server-Side Privacy of On-Device Models.
+In Proceedings of The Web Conference.
+
+Tanjim, M, Sinha, R, Singh, KK, Mahadevan, S, Arbour, D, Sinha, M, & Cottrell, GW (2022)
+Generating and Controlling Diversity in Image Search.
+In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (pp. 411-419).
+
+Mittal, T, Swaminathan, V, Sarkhel, S, Sinha, R, Arbour, D, Mitra, S, & Manocha, D (2021)
+BOhance: Bayesian Optimization for Content Enhancement.
+In 2021 IEEE International Symposium on Multimedia (ISM) (pp. 17-24). IEEE.
+
+Sinha R, Arbour D, Puli AM (2021)
+Bayesian Modeling of Marketing Attribution.
+JSM Proceedings, Marketing Section. Alexandria, VA: American Statistical Association.
+
+Dhamnani, S, Sinha, R, Vinay, V, Kumari, L, & Savova, M (2020)
+Botcha: Detecting Malicious Non-Human Traffic in the Wild.
+In Workshop on Online Misinformation- and Harm-Aware Recommender Systems (OHARS).
+
+Sinha, R, Saini, SK, Sinha, M, & Arbour, D (2020)
+Bayesian Estimation of the Effect of Television Advertising on Web Metrics.
+Accepted at the 7th IEEE International Conference on Data Science and Advanced Analytics (DSAA).
+
+Sinha, R, Andrus, I, & Paulsen, T (2020)
+Attribution IQ: Scalable Game Theoretic Attribution in Web Analytics.
+In Proceedings of the 29th ACM International Conference on Information and Knowledge Management.
+
+Basu, K, Sinha, R, Ong, A, & Basu, T (2020)
+Artificial Intelligence: How is it changing medical sciences and its future?
+In Indian Journal of Dermatology 65.5 (2020): 365.
+
+Modani, N, Kilaru, M, Kaur, A, Sinha, R, Khetan, H (2020)
+Predicting Outcomes in Limited-Overs Cricket Matches.
+In Proceedings of the 6th IKDD Conference on Data Science, ACM.
+
+Dhamnani, S, Singal, D, Sinha, R, Tharun, M, Dash, M (2019)
+RAPID: Rapid and Precise Interpretable Decision Sets.
+In 2019 Proceedings of IEEE International Conference on Big Data (IEEE BigData).
+
+Mai, T, Rao, A, Kapilevich, M, Rossi, R, Abbasi-Yadkori, Y, & Sinha, R (2019)
+On Densification for Minwise Hashing.
+In 2019 UAI Proceedings.
+
+Zhou, M, Abhishek, V, Kennedy, E, Srinivasan, K, & Sinha, R (2019)
+Linking Clicks to Bricks: Spillover Benefits of Online Advertising.
+In SSRN (Working Paper Under Review at Marketing Science).
+
+Sinha, R, Singhal, D, Maneriker, P, Chawla, K, Shrivastava, Y, Pai, D, Sinha, AR (2018)
+Forecasting Granular Audience Size for Online Advertising.
+In Proceedings of AdKDD and TargetAd (KDD Workshop).
+
+Gupta, P, Gupta, S, Jayagopal, A, Pal, S, & Sinha, R (2018)
+Saliency Prediction for Mobile User Interfaces.
+In 2018 IEEE Winter Conference on Applications of Computer Vision (WACV).
+
+Abhishek, V, Sinha, R, Vlassis, N, Zhou, M (2017)
+Linking Clicks to Bricks: Estimating Causal Effects of Email Ads on Offline Sales.
+In Proceedings of the Conference on Information Systems & Technology.
+
+Abhishek, V, Sinha, R, Vlassis, N, Zhou, M (2016)
+Linking Clicks to Bricks: Estimating Causal Effects of Email Ads on Offline Sales.
+In Proceedings of the Workshop on Information Systems and Economics.
+
+Kumari, L, Dhamnani, S, Bhatnagar, A, Sinha, AR, Sinha, R (2016)
+Audience Prism: Segmentation and Early Classification of Visitors Based on Reading Interests.
+In Proceedings of the 3rd IKDD Conference on Data Science (p. 7). ACM.
+
+Sinha, R, Mehta, S, Bohra, T, & Krishnan, A (2015)
+Improving Marketing Interactions by Mining Sequences.
+In Web Information Systems Engineering–WISE 2015 (pp. 277-292). Springer International Publishing.
+
+Yadagiri, MM, Saini, SK, Sinha, R (2015)
+A Non-parametric Approach to the Multi-channel Attribution Problem.
+In Web Information Systems Engineering–WISE 2015 (pp. 338-352). Springer International Publishing.
+
+Basu K, Mariani MC, Serpa L, Sinha R (2015)
+Evaluation of Interpolants in Their Ability to Fit Seismometric Time Series.
+Mathematics, 3(3), 666-689.
+
+Saha Roy R, Sinha R, Chhaya N, Saini SK (2015)
+Probabilistic Deduplication of Anonymous Web Traffic.
+In Posters of the 24th International World Wide Web Conference 2015 (WWW '15), Florence, Italy, 18 – 22 May 2015.
+
+Srinivasan, BV, Natarajan, A, Sinha, R, Sinha, M (2015)
+Community Reaction - From Blogs to Facebook.
+Proceedings of the 2nd IKDD Conference on Data Science. ACM.
+
+Sinha R, Saini SK, Natarajan, A (2014)
+Estimating the Incremental Effects of Interactions for Marketing Attribution.
+Proceedings of the IEEE conference on Behavioral, Economic, and Socio-Cultural Computing.
+
+Shen, Y, Anderson, A, Sinha, R, & Li, Y (2014)
+Joint modeling tumor burden and time to event data in oncology trials.
+Pharmaceutical statistics, 13(5), 286-293.
+
+Kateja, R, Rohith, A, Kumar, P, Sinha, R (2014, January)
+VizClick Visualizing Clickstream Data.
+Proceedings of the 5th International Conference on Information Visualization (pp. 247-255).
+
+Srinivasan, BV, Natarajan, A, Sinha, R, Gupta, V, Revankar, S, & Ravindran, B (2013)
+Will your facebook post be engaging?
+Proceedings of the 1st Workshop on User Engagement Optimization (pp. 25-28). ACM.
+
+Tandon, R, Chakraborty, A, Srinivasan, G, Shroff, M, Abdullah, A, Shamasundar, B, Sinha R, Subramanian S, Hill D, Dhore, P (2013)
+Hewlett Packard: Delivering Profitable Growth for HPDirect.com Using Operations Research.
+Interfaces, 43(1), 48-61.
+
+Pal B, Sinha R, Saha A, Jaumann P, Misra S (2012)
+Customer Targeting Framework: Scalable Repeat Purchase Scoring Algorithm for Large Databases.
+IPCSIT vol. 25.
+
+Anderson A, Shen Y, Sinha R (2011)
+A Joint Model for Tumor Burden and Progression-Free Survival.
+JSM Proceedings, Biopharmaceutical Section. Alexandria, VA: American Statistical Association.
+
+Sinha R, Anderson A (2010)
+Longitudinal Methods for Analysis of Tumor Burden Data.
+JSM Proceedings, Biopharmaceutical Section. Alexandria, VA: American Statistical Association.
+
+Porkka, K, Khoury, H J, Paquette, R L, Matloub, Y, Sinha, R, & Cortes, J E (2010)
+Dasatinib 100 mg once daily minimizes the occurrence of pleural effusion in patients with chronic myeloid leukemia in chronic phase and efficacy is unaffected in patients who develop pleural effusion.
+Cancer, 116(2), 377-386.
+
+Sinha R, Chen T-T, Zhu C (2009)
+Analyzing Intent-to-Treat Duration of Response.
+JSM Proceedings, Biopharmaceutical Section. Alexandria, VA: American Statistical Association.
+
+Sinha R, Igo RP, Saini SK, Elston RC, Luo Y (2009)
+Bayesian Intervals for Linkage Locations.
+Genetic Epidemiology 33(7):604-16.
+
+Sinha R, Chen T-T, Zhu C (2008)
+Intent-to-Treat Duration of Response: Statistical Issues in Study Design and Analysis.
+JSM Proceedings, Biometrics Section. Alexandria, VA: American Statistical Association.
+
+Hochhaus, A, Muller, M C, Radich, J, Branford, S, Hanfstein, B, Rousselot, P, Lipton J H, Bleickardt E, Sinha R, Hughes, T P (2008, November)
+Dasatinib-Associated Major Molecular Responses Are Rapidly Achieved in Patients with Chronic Myeloid Leukemia in Chronic Phase (CML-CP) Following Resistance, Suboptimal Response, or Intolerance on Imatinib.
+ASH Annual Meeting Abstracts (Vol. 112, No. 11, p. 1095).
+
+Baccarani, M, Rosti, G, Saglio, G, Cortes, J, Stone, R, Niederwieser, D W, Sinha, R, Simonsson, B (2008, November)
+Dasatinib time to and durability of major and complete cytogenetic response (MCyR and CCyR) in patients with chronic myeloid leukemia in chronic phase (CML-CP).
+ASH Annual Meeting Abstracts (Vol. 112, No. 11, p. 450).
+
+Porkka, K, Khoury, H J, Paquette, R, Matloub, Y, Liu, D, Sinha, R, & Cortes, J (2008, November)
+Dasatinib 100 mg once daily (QD) maintains long-term efficacy and minimizes the occurrence of pleural effusion: an analysis of 24-month data in patients with resistance, suboptimal response, or intolerance to Imatinib (CA180-034).
+Blood (Vol. 112, No. 11, pp. 1113-1114).
+
+Deininger, M W, Mauro, M J, Matloub, Y, Sinha, R, Ploughman, L, Liu, D, & Radich, J (2008, November)
+Prevalence of T315I, dasatinib-specific resistant mutations (F317L, V299L, and T315A), and nilotinib-specific resistant mutations (P-loop and F359) at the time of imatinib resistance in chronic-phase chronic myeloid leukemia (CP-CML).
+Blood (Vol. 112, No. 11, pp. 1111-1111).
+
+Cervantes, F, Baccarani, M, Lipton, J, Matloub, Y, Sinha, R, Stone, R M, & Mauro, M (2008, June)
+Dasatinib long-term efficacy in patients with chronic myeloid leukemia in chronic phase (CML-CP) with resistance or intolerance to imatinib: a two-year update of the START-C study.
+Haematologica-The Hematology Journal (Vol. 93, pp. 372-372).
+
+Mauro, M J, Baccarani, M, Cervantes, F, Lipton, J H, Matloub, Y, Sinha, R, & Stone, R M (2008, May)
+Dasatinib 2-year efficacy in patients with chronic-phase chronic myelogenous leukemia (CML-CP) with resistance or intolerance to imatinib (START-C).
+ASCO Annual Meeting Proceedings (Vol. 26, No. 15_suppl, p. 7009).
+
+Sinha R, Gray-McGuire C (2008)
+Haseman Elston Regression in Ascertained Samples: Importance of Dependent Variable and Mean Correction Factor Selection.
+Human Heredity, 65(2):66-76.
+
+Sinha R, Luo Y (2007)
+Efficient Intermediate Fine Mapping: Confidence Set Inference with Likelihood Ratio Test Statistic.
+Genetic Epidemiology, 31(8):922-36.
+
+Qing, L, Lu, Q, Sinha, R, Xing, C, & Elston, R C (2007, July)
+Mantel-Haenszel approach to case-triad data.
+Genetic Epidemiology (Vol. 31, No. 5, pp. 495-495).
+
+Sinha R, Luo Y (2007)
+Two-Step Intermediate Fine Mapping With Likelihood Ratio Test Statistic.
+BMC Proceedings, Suppl 1:S146.
+
+Won S, Sinha R, Luo Y (2007)
+Fine-Scale Linkage Disequilibrium Mapping: A Comparison of Coalescent Based and Haplotype Clustering Based Methods.
+BMC Proceedings, Suppl 1:S133.
+
+Rybicki B, Sinha R, Iyengar S, Gray-McGuire C, Elston RC, Iannuzzi, M (2007)
+Genetic Linkage Analysis of Sarcoidosis Phenotypes: The Sarcoidosis Genetic Analysis (SAGA) Study.
+Genes and Immunity, 8(5):379-86.
+
+Sinha, R (2007)
+Efficient Confidence Sets for Disease Gene Locations.
+Doctoral dissertation, Case Western Reserve University.
+
+Gray-McGuire C, Sinha R, Iyengar S, Rybicki B, Elston RC, Iannuzzi, M (2006)
+Genetic Characterization and Fine Mapping of Susceptibility Genes for Sarcoidosis in African Americans on Chromosome 5.
+Human Genetics, 120(3):420-30.
+
+Xing C, Sinha R, Xing G, Lu Q, Elston RC (2006)
+Marker-marker Linkage Disequilibrium does not Necessarily Lead to Inflated type I error in Multipoint Model-free Linkage Analysis of Incomplete Pedigrees.
+American Journal of Human Genetics, 79:396-401.
+
+Sinha R, Sinha M, Mathew G, Elston RC, Luo Y (2005)
+Local False Discovery Rate and Minimum Total Error Rate Approaches to Identifying Interesting Chromosomal Regions.
+BMC Genetics 2005, 6(Suppl 1):S23 (First three authors have equal contribution).
+
+Contact
+- ritwik.sinha AT gmail DOT com
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PAGE: Work / Patents
+URL: https://sites.google.com/site/ritwiksinha/work/patents
+
+# Patents Granted and Filed
+
+Granted US Patents
+1. Utilizing One Hash Permutation and Populated-Value-Slot-Based Densification for Generating Audience Segment Trait Recommendations (2019)
+   (with Rao, A, Mai, T, Kapilevich, M, Abbasi, Y, Rossi, R, Hodorogea, AI) Patent Number: 11,109,085
+2. Marketing Attribution Capturing Synergistic Effects Between Channels (2019)
+   (with Puli, AM, Arbour, D) Patent Number: 11,232,483
+3. Detecting Robotic Internet Activity Across Domains Utilizing One-Class and Domain Adaptation Machine Learning Models (2018)
+   (with Dhamnani, S, Vinay, V, Savova, M, Kumari, L, Weinstein, D) Patent Number: 10,841,323
+4. Accurate and Interpretable Rules for User Segmentation (2018)
+   (with Dash, M, Mohandoss, T, Singal, D, Palanciuc, V, Maneriker, P) Patent Number: 11,200,501
+5. Saliency Prediction for a Mobile User Interface (2018)
+   (with Gupta, P, Gupta, S, Jayagopal, A, Pal, S) Patent Number: 10,664,999
+6. Identifying High Value Segments in Categorical Data (2018)
+   (with Sinha, AR, Singal, D, Manerikar, P) Patent Number: 10,929,438
+7. Forecasting Potential Audience Size and Unduplicated Audience Size for Display Advertising (2017)
+   (with Sinha AR, Singal D, Pai D, Shrivastava Y, Chawla K) Patent Number: 11,080,745
+8. Saliency Prediction for Informational Documents (2017)
+   (with Gupta, P, Gupta, S, Jayagopal, A, Pal, S) Patent Number: 11,263,470
+9. Classification of Website Sessions Using One-Class Labeling Techniques (2017)
+   (with Dhamnani S, Vinay V, Kumari, L) Patent Number: 10,785,318
+10. Metric Anomaly Detection in a Digital Medium Environment (2017)
+   (with Saini SK) Patent Number: 9,942,117
+11. Segment IQ - Incrementally Detecting Differing Categorical Features when Comparing Segments (2016)
+   (with Saini SK, Rimer M, Paulsen T) Patent Number: 10,902,443
+12. Systems and Techniques for Determining Associations Between Multiple Types of Data in Large Data Sets (2016)
+   (with Said Kobeissi, Mike Young) Patent Number: 10,552,996
+13. Simulation-Based Evaluation of a Marketing Channel Attribution Model (2016)
+   (with Yadagiri MM, Saini SK) Patent Number: 10,387,909
+14. Value Function-Based Estimation of Multi-Channel Attributions (2015)
+   (with Yadagiri MM, Saini SK) Patent Number: 10,395,272
+15. Adaptive Sampling Scheme for Severely Imbalanced Large Scale Data (2015)
+   (with Zhang W, Kobeissi S, Tomko S, Natarajan A, Saini SK) Patent Number: 10,346,861
+16. Identifying Sources of Anomalies in Multi-Variable Metrics using Linearization (2015)
+   (Saini SK, Rimer M, Natarajan A) Patent Number: 10,404,777
+
+(Additional filed / listed items from the page)
+4. Media Content Enhancement Based on User Feedback of Multiple Variations (with Mittal, Swaminathan, V, Arbour, D, Mitra, S, Sarkhel, S) 17,519,311
+5. Generating Simulated Images that Enhance Socio-Demographic Diversity (with Tanjim, MM, Arbour, D, Sinha, M, Mahadevan, S, Singh, KK) 17/485,780
+6. Generating and Executing Automatic Suggestions to Modify Data Of Ingested Data Collections Without Additional Data Ingestion (2021)
+   (with Mitra, S, Zhao, H, Sarkhel, S, Paulsen, T, George, B) 17/347,133
+7. Framework that Enables Anytime Analysis of Controlled Experiments for Optimizing Digital Content (2021)
+   (with Arbour, D, Waudby-Smith, I, Ramdas, A) 17/192,320
+8. Intelligent Customer Journey Path Mining (2020)
+   (with Du, F, Choudhary, S, Mehta, S, Singh, H, Kobeissi, S, George, B, Challis, C, Bhutani, P, Bates, J, Andrus, I) To be filed
+9. Bayesian Estimation of the Effect of Aggregate Advertising on Web Metrics (2020)
+   (with Saini, SK, Sinha, M, Arbour, D) 17/004,377
+10. Systems for Predicting a Terminal Event (2020)
+   (with Doda, A, Sinha, G, Lau, K, Bedmutha, A, Saini, SK, Raman, V, Kumbi, N, Rahman, O, Sinha, AR) 16/866,261
+11. Algorithmic Attribution (2020) (with Andrus, I, Paulsen, T) 16/853,448
+12. Generating and Providing Dimension-based Look-alike Segments for a Target Segment (2020)
+   (with Arbour, D, Du, F, Rao, A, Sinha AR, Wong, R, Challis, C, Kobessi, S, Reznik, I, George, B, Bhutani, P) 16/746,531
+13. Graph Data Structure for using Inter-feature Dependencies in Machine-Learning (2019) (with Dhamnani, S) 16/670,543
+14. Efficiently Determining Local Machine Learning Model Feature Contributions (2019) (with Dhamnani, S, Sinha, M) 16/520,645
+15. Fast and Accurate Rule Selection for Interpretable Decision Sets (2019) (with Dhamnani S, Singal, D) 16/353,076
+16. Measuring Promotion Performance over Online Social Media (2015) (with Natarajan A, Agarwal A, Dutta S, Sheik N, Sinha A) 14/635,811
+17. Multi-Channel Marketing Campaigns (2014) (with Mehta S, Bohra T, Krishnan A) 14/553,911
+18. Personalized Marketing Based on Sequence Mining (2014) (with Mehta S, Bohra T, Krishnan A) 14/548,684
+19. Preference Mapping for Automated Attribute-Selection in Campaign Design (2014) (with Sinha M, Saha Roy R) 14/526,250
+20. Marketing Channel Attribution (2014) (with Saini SK, Natarajan A) 14/508,141
+21. Method and System for Determining Customer Conversion (2012) (with Pal B) 13/483,785
+
+Contact
+- ritwik.sinha AT gmail DOT com
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PAGE: Work / Press
+URL: https://sites.google.com/site/ritwiksinha/work/press
+
+# Work Featured in the Popular Press
+- Axios, September 2018: When a few simple rules are better than flashy AI (by name)
+- The Wall Street Journal, March 2018: Fraudulent Web Traffic Continues to Plague Advertisers, Other Businesses
+- The Drum, March 2018: Adobe declares its data scientists have found the solution to tackle ad fraud
+- Forbes, November 2017: Adobe Enhances Analytics With Advanced New Features
+- Tech Crunch, September 2017: Adobe wants to make every online retailer more analytical
+- The Business Wire, March 2015: Adobe Pushes Boundaries of Marketing at Summit 2015
+- Adobe Blog, October 2014: Adobe Analytics Offers New Features for Improving the Customer Journey
+- The Business Wire, January 2013: Adobe Unveils Major Innovations in Adobe Analytics
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PAGE: Work / Service
+URL: https://sites.google.com/site/ritwiksinha/work/service
+
+# Service on Professional Committees
+Serving on the Board of Studies for PSG Tech
+
+Conference Reviewer
+- Conference of Data Science
+- Comsnet
+- Adapting Data Mining for Security
+- Adobe Tech Summit
+
+Journal Reviewer
+- Physica A
+- Telematics and Informatics
+
+Student Committee
+- Akanksha Atrey, UMass Amherst, PhD
+- Jan Kadel, University of Hamburg, MS
+- Shiv Shankar, UMass Amherst, PhD
+
+Contact
+- ritwik.sinha AT gmail DOT com
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PAGE: Family
+URL: https://sites.google.com/site/ritwiksinha/family
+
+# Family
+I come from a Bangla speaking family from the eastern Indian city of Kolkata or Calcutta.
+
+I am married to Moumita Sinha and we have two sons, Nishaant and Aneesh. We also have a dog, his name is Nash. We currently live in Cupertino, California.
+
+My father Shri Santanu Sinha Chaudhuri (and his blog) worked in a Bank for about twenty five years and part of his responsibilities was to move from one city to another whenever we got too comfortable in one place. As a result, I spent my schooling years in Hyderabad, Visakhapatnam, Trivandrum, Bangalore and Calcutta. I accept though, that seeing so many places and meeting so many people was wonderful experience most of the time.
+Presently my father is engaged in writing in English and translating Bengali works of fiction into English.
+
+My mother Smt. Arundhati Sinha is a teacher by profession and has the experience of having taught in more than ten schools. Presently she has an adorable pre-school Ankur Khelaghar (ankurkhelaghar.googlepages.com) in Parnasree, Calcutta.
+
+My sister Sohini Sinha, also lives and works in Bangalore, India.
+
+Chorki or Chakradhar was our dear dog who passed away a few years back.
+
+Contact
+- ritwik.sinha AT gmail DOT com
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PAGE: Family / Chorki
+URL: https://sites.google.com/site/ritwiksinha/family/chorki
+
+# Chorki
+Chorki was a six week old male pup when he came to our house and after many years of trials and tribulations on his and my families part he has managed to become the most important individual in the family. Chorki is a Smooth Fox Terrier. The "Smooth" stands for a smooth coat, not smooth like James Bond.
+
+He was born on the 5th of February 1995 and came to our house on the 18th of March the same year. Chorki is a wonderfully naughty dog, and it is impossible not to love him. And he will fetch anything that you throw. He will chase anything that moves, like lizards or crows and even flowing water. He does not like being photographed, so I do not have many good pictures of him. Here are some of the nicer ones (unfortunately in low resolution). Chorki passed away in 2010.
+
+(Images are referenced on the page via Google Sites image links.)
+
+Contact
+- ritwik.sinha AT gmail DOT com
+
+================================================================================
+END OF DUMP

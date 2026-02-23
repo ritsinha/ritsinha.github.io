@@ -1,0 +1,325 @@
+/* ============================================================
+   Ritwik Sinha — Personal Site Stylesheet
+   GitHub Pages compatible · Pure CSS · No dependencies
+   ============================================================ */
+
+:root {
+  --navy:   #1e3a5f;
+  --blue:   #2563eb;
+  --text:   #1a1a2e;
+  --muted:  #6b7280;
+  --border: #e5e7eb;
+  --bg:     #ffffff;
+  --bg-alt: #f8fafc;
+  --accent: #dbeafe;
+  font-size: 16px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Navigation ─────────────────────────────────────────── */
+nav {
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.nav-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 1.5rem 1rem 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.nav-links li a {
+  display: block;
+  color: #cbd5e1;
+  padding: .85rem .9rem;
+  font-size: .88rem;
+  letter-spacing: .01em;
+  transition: color .15s, background .15s;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #fff;
+  background: rgba(255,255,255,.08);
+  text-decoration: none;
+}
+
+/* ── Page layout ─────────────────────────────────────────── */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+/* ── Hero (home page) ────────────────────────────────────── */
+.hero {
+  padding: 3.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--navy);
+  margin-bottom: .4rem;
+}
+.hero .tagline {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-bottom: 1.8rem;
+}
+.badge {
+  background: var(--accent);
+  color: var(--blue);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .3rem .75rem;
+  border-radius: 99px;
+  letter-spacing: .02em;
+}
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  align-items: center;
+}
+.contact-row a {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .92rem;
+  color: var(--muted);
+}
+.contact-row a:hover { color: var(--blue); text-decoration: none; }
+
+/* ── Section headings ────────────────────────────────────── */
+h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1.2rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--border);
+}
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 1.8rem 0 .6rem;
+}
+
+/* ── Info blocks (home page) ─────────────────────────────── */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 600px) { .info-grid { grid-template-columns: 1fr; } }
+
+.info-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+}
+.info-card h3 {
+  margin-top: 0;
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin-bottom: .7rem;
+}
+
+/* ── Prose sections ──────────────────────────────────────── */
+.section { margin-bottom: 2.5rem; }
+.section p { margin-bottom: 1rem; color: var(--text); }
+.section ul { padding-left: 1.3rem; }
+.section ul li { margin-bottom: .35rem; }
+
+/* ── Publications list ───────────────────────────────────── */
+.pub-list { list-style: none; padding: 0; }
+.pub-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: .95rem;
+  line-height: 1.6;
+}
+.pub-list li:last-child { border-bottom: none; }
+.pub-title { font-style: italic; color: var(--text); }
+.pub-venue { color: var(--muted); font-size: .88rem; display: block; margin-top: .2rem; }
+.pub-authors { margin-bottom: .2rem; }
+.pub-me { font-weight: 700; color: var(--navy); }
+
+.year-group { margin-bottom: 2rem; }
+.year-label {
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--blue);
+  margin-bottom: .8rem;
+  padding: .25rem .7rem;
+  background: var(--accent);
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* ── Patents list ────────────────────────────────────────── */
+.patent-list { list-style: none; padding: 0; }
+.patent-list li {
+  padding: .8rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: .93rem;
+  line-height: 1.6;
+}
+.patent-list li:last-child { border-bottom: none; }
+.patent-num {
+  font-size: .78rem;
+  color: var(--muted);
+  margin-top: .15rem;
+}
+.patent-title { font-weight: 600; color: var(--navy); }
+.patent-with { color: var(--muted); font-size: .88rem; }
+
+/* ── Press list ──────────────────────────────────────────── */
+.press-list { list-style: none; padding: 0; }
+.press-list li {
+  display: flex;
+  gap: 1rem;
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: .93rem;
+  align-items: baseline;
+}
+.press-list li:last-child { border-bottom: none; }
+.press-outlet { font-weight: 700; color: var(--navy); min-width: 180px; flex-shrink: 0; }
+.press-date { color: var(--muted); font-size: .82rem; margin-top: .1rem; }
+
+/* ── Service / committee ─────────────────────────────────── */
+.service-section { margin-bottom: 2rem; }
+.tag-list { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; list-style: none; margin-top: .6rem; }
+.tag {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: .25rem .75rem;
+  font-size: .87rem;
+  color: var(--text);
+}
+
+/* ── Profile photo (home page) ───────────────────────────── */
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+.hero-photo {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--border);
+  box-shadow: 0 4px 16px rgba(0,0,0,.10);
+}
+.hero-text { flex: 1; min-width: 0; }
+@media (max-width: 600px) {
+  .hero-inner { flex-direction: column; align-items: center; }
+  .hero-text { text-align: center; }
+  .badge-row, .contact-row { justify-content: center; }
+}
+
+/* ── Family photos ───────────────────────────────────────── */
+.family-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.family-photo {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  display: block;
+}
+.pet-photo {
+  max-width: 260px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  display: block;
+  margin: 1.2rem 0;
+}
+.photo-caption {
+  font-size: .82rem;
+  color: var(--muted);
+  margin-top: .4rem;
+  font-style: italic;
+}
+
+/* ── Chorki collage ──────────────────────────────────────── */
+.chorki-collage {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  margin: 1.2rem 0;
+  max-width: 400px;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+footer {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1.8rem 1.5rem;
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+/* ── Responsive nav ──────────────────────────────────────── */
+@media (max-width: 680px) {
+  .nav-brand { padding-right: .5rem; }
+  .nav-links li a { padding: .8rem .6rem; font-size: .82rem; }
+  main { padding: 2rem 1rem 4rem; }
+  .hero h1 { font-size: 1.8rem; }
+}
