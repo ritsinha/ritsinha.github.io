@@ -29,7 +29,7 @@
 <main>
   <div class="hero">
     <div class="hero-inner">
-      <img src="ritwik.jpg" alt="Ritwik Sinha" class="hero-photo"/>
+      <img id="hero-photo" src="ritwik1.jpg" alt="Ritwik Sinha" class="hero-photo"/>
       <div class="hero-text">
         <h1>Ritwik Sinha</h1>
         <p class="tagline">Principal Research Scientist · Adobe Research · San Jose, CA</p>
@@ -90,5 +90,9 @@
   &copy; 2026 Ritwik Sinha &nbsp;·&nbsp; Cupertino, CA
 </footer>
 
+<script>
+  var n = Math.floor(Math.random() * 5) + 1;
+  document.getElementById('hero-photo').src = 'ritwik' + n + '.jpg';
+</script>
 </body>
 </html>
