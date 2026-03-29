@@ -79,6 +79,19 @@ def parse_post(path: Path) -> dict:
         body = text.strip()
 
     slug = path.stem  # YYYY-MM-DD-slug
+
+    # Convert [youtube: VIDEO_ID] shortcodes to responsive iframes
+    def youtube_replace(m):
+        vid = m.group(1).strip()
+        return (
+            f'<div class="yt-embed">'
+            f'<iframe src="https://www.youtube.com/embed/{vid}" '
+            f'title="YouTube video" frameborder="0" allowfullscreen '
+            f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
+            f'gyroscope; picture-in-picture"></iframe></div>'
+        )
+    body = re.sub(r'\[youtube:\s*([A-Za-z0-9_\-]+)\]', youtube_replace, body)
+
     html_body = markdown.markdown(
         body,
         extensions=["extra", "smarty", "toc"],
