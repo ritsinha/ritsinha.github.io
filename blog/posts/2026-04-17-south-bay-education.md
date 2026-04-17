@@ -27,7 +27,7 @@ The result is an interactive choropleth. You can switch between education metric
 
 ## What the data shows
 
-The range is wide. Palo Alto's 94305 ZIP, which covers the Stanford campus, comes in at 90.9% with a bachelor's degree or higher. San Jose's 95122 ZIP, on the East Side, is at 17.9%. The South Bay average across all 54 ZIPs is around 60%, well above the national figure of roughly 35%.
+The range is wide. Palo Alto's 94305 ZIP, which covers the Stanford campus, comes in at 90.9% with a bachelor's degree or higher. San Jose's 95122 ZIP, on the East Side, is at 17.9%. The South Bay average across all 54 ZIPs is around 60%, well above the national figure of roughly 35%.[^1]
 
 [plotly: results/education_by_city.html]
 
@@ -58,5 +58,7 @@ My own ZIP, 95014, comes in at around 9% with a doctorate and 35% with a master'
 The patterns here are not surprising, but they are striking at ZIP code resolution. The South Bay is not one place educationally. Some of it is among the most credentialed geographies in the country. Other parts, a short drive away, look closer to the national average.
 
 All data is from the U.S. Census Bureau and publicly available. The code is [on GitHub](https://github.com/ritsinha/education_by_area).
+
+[^1]: One ZIP in the dataset, 95053, is the postal address for the Santa Clara University campus rather than a residential neighborhood. Its 131 adults aged 25+ and 100% bachelor's attainment reflect campus residents, not the surrounding community. It is included in the aggregate figures but should not be read as representative of Santa Clara as a city.
 
 *Ritwik Sinha — Cupertino, CA*
