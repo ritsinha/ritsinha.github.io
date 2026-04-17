@@ -55,7 +55,7 @@ My own ZIP, 95014, comes in at around 9% with a doctorate and 35% with a master'
 
 ---
 
-The patterns here are not surprising, but they are striking at ZIP code resolution. The South Bay is not one place educationally. Some of it is among the most credentialed geographies in the country. Other parts, a short drive away, look closer to the national average.
+The patterns here are not surprising, but they are striking at ZIP code resolution. The South Bay is not one place educationally. Some of it is among the most qualified geographies in the country. Other parts, a short drive away, look closer to the national average.
 
 All data is from the U.S. Census Bureau and publicly available. The code is [on GitHub](https://github.com/ritsinha/education_by_area).
 
