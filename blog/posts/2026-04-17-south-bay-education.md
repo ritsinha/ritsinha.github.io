@@ -7,7 +7,7 @@ tags: [data, analysis]
 
 I am a statistician by training and a data scientist by profession. I also happen to live in ZIP code 95014, and I have a PhD.
 
-A while back, I came across [this SF Chronicle piece](https://www.sfchronicle.com/sf/article/most-educated-residents-data-21199765.php) mapping educational attainment across the Bay Area. The Chronicle has a good team of data journalists who regularly tackle interesting questions about the world around us. Reading it made me curious about my own neighbors, the people a few blocks away. What does that map actually look like at ZIP code resolution, right here in Cupertino and the surrounding cities?
+A while back, I came across [this SF Chronicle piece](https://www.sfchronicle.com/sf/article/most-educated-residents-data-21199765.php) mapping educational attainment across different neighborhoods of San Francisco. The Chronicle has a good team of data journalists who regularly tackle interesting questions about the world around us. Reading it made me curious about my own neighbors, the people a few blocks away. What does that map actually look like at ZIP code resolution, right here in Cupertino and the surrounding cities?
 
 So, with the help of modern AI tools, I pulled the data and made the maps.
 
