@@ -14,22 +14,4 @@ So I built one. The list below is every book I have finished from 2017 to Septem
   <p style="font-size:.85rem; color:#6b7280; margin-top:.5rem;"><a href="reading-atlas/">Open the atlas in its own page</a> if the frame feels cramped.</p>
 </div>
 
-## How the list was assembled
-
-Each service was scraped for what it knew: borrowing history from the Santa Clara County Library and its Libby app, the Kindle content list, the Audible library and purchase history, a Spotify playlist. That produced 540 candidate rows, most of them not mine to claim (other people's loans on the family library card, cookbooks and pottery manuals I had borrowed to look at, a few DVDs). I went through the lot by hand and marked each one read, want to read, or ignore, and then corrected the dates the services had guessed, which were often off by months or years. The corrected list is 137 works: 97 read and 40 waiting.
-
-The dates are month-level guesses. For a library book the service records when I borrowed it, for a Kindle book when I bought it, for Audible when I purchased it, and I have overridden about thirty of those from memory. None of them is a finish date in any strict sense.
-
-## The three views
-
-The **shelf** is just covers. I recognise a book faster by its cover than by its title, and a wall of them turns out to be a better summary of nine years than any list.
-
-The **timeline** groups the read books by year. The shape is what I expected and still found a little surprising to see: the Audible years of 2020 to 2022, thick with history and spy novels, then a switch to Libby in 2025 with a run of Forsyth and Tolkien, and 2026 already close to a full year's worth by September.
-
-The **constellation** is the part I enjoyed building. Each book is described in two sentences, the descriptions are turned into vectors with a sentence-embedding model that runs on my laptop, and each book is joined to its four nearest neighbours by cosine similarity, with a small bonus for sharing an author or a shelf. The result is laid out as a force-directed graph. Fiction sits on the left, history on the right, and popular science and economics bridge the top. Hovering on a book lights up its neighbours and, more faintly, the rest of its shelf; clicking opens the details. The shelves themselves, fourteen of them, I assigned by hand, so they are one reader's filing system rather than anyone's catalogue.
-
-## What it does not contain
-
-Anything read on paper, anything before 2017, and anything I started and did not finish. That last list would probably be more revealing than this one, but it is harder to reconstruct and I am not sure I want to.
-
 *Ritwik Sinha — Cupertino, CA*
