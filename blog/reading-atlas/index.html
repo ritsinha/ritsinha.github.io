@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A personal reading atlas: shelf, read timeline, and subject constellation.">
+<title>Reading Atlas</title>
+<style>
+:root { --ink:#24272d; --muted:#707783; --paper:#f6f4ef; --card:#fffefa; --line:#ddd9d0; --accent:#506b73; --shadow:0 12px 30px rgba(34,39,45,.08); }
+* { box-sizing:border-box; } body { margin:0; color:var(--ink); background:var(--paper); font:15px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.shell { max-width:1280px; margin:0 auto; padding:28px 28px 72px; }.eyebrow { color:var(--accent); font-size:.72rem; font-weight:750; letter-spacing:.14em; text-transform:uppercase; } header { display:flex; justify-content:space-between; gap:24px; align-items:flex-end; padding:42px 0 28px; border-bottom:1px solid var(--line); } h1 { font:500 clamp(2.8rem,7vw,5.8rem)/.94 Georgia,"Times New Roman",serif; letter-spacing:-.055em; margin:8px 0 12px; }.lede { max-width:680px; margin:0; color:var(--muted); font-size:1.02rem; }.review-link { color:var(--ink); font-size:.8rem; text-decoration:none; border-bottom:1px solid var(--ink); }.counts { display:flex; gap:24px; flex-shrink:0; }.count { border-left:1px solid var(--line); padding-left:16px; }.count b { display:block; color:var(--accent); font:500 2rem/1 Georgia,serif; }.count span { color:var(--muted); font-size:.78rem; }
+.controls { display:flex; flex-wrap:wrap; align-items:center; gap:10px; padding:22px 0; border-bottom:1px solid var(--line); }.views { display:flex; gap:4px; margin-right:auto; }button,select,input { color:inherit; font:inherit; }button { border:1px solid transparent; background:transparent; cursor:pointer; }.view { padding:7px 11px; color:var(--muted); border-radius:999px; }.view.active { color:#fff; background:var(--ink); }select,input { border:1px solid var(--line); background:var(--card); border-radius:7px; padding:8px 10px; }input { min-width:190px; }.copy { padding:8px 10px; border:1px solid var(--line); border-radius:7px; background:var(--card); }.copy-status { color:var(--muted); font-size:.78rem; }
+.view-panel { display:none; padding-top:28px; }.view-panel.active { display:block; }.shelf { display:grid; grid-template-columns:repeat(auto-fill,minmax(158px,1fr)); gap:22px 16px; }.book { text-align:left; padding:0; position:relative; }.cover-wrap { position:relative; aspect-ratio:2/3; overflow:hidden; border-radius:3px 7px 7px 3px; background:#c7b8a2; box-shadow:6px 8px 12px rgba(34,39,45,.16); }.cover-wrap::after { content:""; position:absolute; inset:0; border:1px solid rgba(0,0,0,.08); border-radius:inherit; pointer-events:none; }.cover-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }.cover-fallback { height:100%; display:flex; align-items:flex-end; padding:12px; background:linear-gradient(155deg,var(--cover-a),var(--cover-b)); color:#fff; font:500 1.2rem/1.08 Georgia,serif; }.book:hover .cover-wrap { transform:translateY(-3px); box-shadow:9px 13px 18px rgba(34,39,45,.2); }.book-title { display:block; margin-top:10px; font:600 .89rem/1.2 Georgia,serif; }.book-subtitle,.book-author { display:block; color:var(--muted); font-size:.77rem; margin-top:2px; }.pill { display:inline-block; margin-top:7px; padding:2px 6px; color:var(--accent); background:#e6eceb; border-radius:99px; font-size:.65rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }.pill.want { color:#8d5f28; background:#f3e7d4; }.empty { padding:50px 0; color:var(--muted); }
+.timeline-note,.map-note { max-width:720px; color:var(--muted); margin:0 0 16px; }.timeline { border-left:1px solid var(--line); margin-left:14px; }.year { display:grid; grid-template-columns:106px 1fr; gap:18px; padding:0 0 30px 28px; position:relative; }.year::before { content:""; width:9px; height:9px; border-radius:50%; background:var(--accent); position:absolute; left:-5px; top:8px; }.year-label { color:var(--accent); font:500 1.55rem/1 Georgia,serif; }.year-count { display:block; color:var(--muted); font:12px/1.2 system-ui,sans-serif; margin-top:5px; }.format-bar { display:flex; height:6px; overflow:hidden; border-radius:9px; background:#e3e0d8; margin-top:8px; }.format-bar span { height:100%; }.timeline-books { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px; }.timeline-book { display:flex; gap:12px; align-items:center; text-align:left; padding:8px 12px 8px 8px; background:var(--card); border:1px solid var(--line); border-radius:7px; cursor:pointer; }.timeline-book .thumb { flex:0 0 44px; width:44px; height:66px; object-fit:cover; border-radius:2px 4px 4px 2px; box-shadow:2px 3px 6px rgba(34,39,45,.18); background:#c7b8a2; }.timeline-book .thumb.ph { display:block; background:linear-gradient(155deg,#b8c6c7,#42585e); }.timeline-book .tb-text { display:block; min-width:0; }.timeline-book:hover { border-color:var(--accent); }.timeline-book b { display:block; font-family:Georgia,serif; }.timeline-book span { display:block; color:var(--muted); font-size:.78rem; }
+.map { position:relative; height:min(78vh,760px); min-height:480px; background:#eeece5; border:1px solid var(--line); border-radius:12px; overflow:hidden; }#constellation { width:100%; height:100%; display:block; cursor:grab; }#constellation:active { cursor:grabbing; }.edge { stroke:#8e9c9b; stroke-opacity:.35; }.edge.author { stroke-dasharray:3 3; }.edge.dim { stroke-opacity:.06; }.edge.hot { stroke:#3a4a4c; stroke-opacity:.9; }.gnode { cursor:pointer; }.gnode image { pointer-events:none; }.gnode .frame { fill:none; stroke-width:2; }.gnode.want .frame { stroke-dasharray:4 3; }.gnode.dim { opacity:.14; }.gnode.kin { opacity:.6; }.gnode.kin .frame { stroke-width:3.5; }.gnode.hot .frame { stroke-width:3.5; }.gnode .hit { cursor:pointer; }.gnode .lbl { font:600 10px Georgia,serif; fill:#2f3a3c; paint-order:stroke; stroke:#eeece5; stroke-width:3px; stroke-linejoin:round; pointer-events:none; opacity:0; }.gnode:hover .lbl, .gnode.hot .lbl, .labels-on .gnode .lbl { opacity:1; }.map-key { display:flex; gap:6px 14px; flex-wrap:wrap; color:var(--muted); font-size:.78rem; margin:12px 0; align-items:center; }.map-key i { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; }.map-key button { border:1px solid var(--line); border-radius:6px; padding:3px 8px; background:var(--card); font-size:.75rem; }.map-key .sel { font-weight:600; color:var(--ink); }.map-tip { position:absolute; left:12px; bottom:12px; max-width:360px; background:rgba(255,254,250,.94); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:.8rem; color:var(--ink); pointer-events:none; display:none; }.map-tip b { font-family:Georgia,serif; }.map-tip i { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; }.map-tip span b { font-family:inherit; font-weight:600; }.map-tip span { color:var(--muted); display:block; }dialog { max-width:660px; width:calc(100% - 28px); border:0; padding:0; border-radius:12px; box-shadow:var(--shadow); color:var(--ink); }dialog::backdrop { background:rgba(27,31,35,.45); }.detail { display:grid; grid-template-columns:150px 1fr; gap:24px; padding:26px; background:var(--card); }.detail-cover { aspect-ratio:2/3; border-radius:3px 6px 6px 3px; overflow:hidden; background:#c7b8a2; box-shadow:4px 6px 12px rgba(34,39,45,.18); }.detail-cover img { width:100%; height:100%; object-fit:cover; display:block; }.placeholder-cover { display:flex; align-items:flex-end; padding:12px; background:linear-gradient(155deg,#b8c6c7,#42585e); color:#fff; font:500 1.1rem/1.1 Georgia,serif; }.detail a.near { color:var(--accent); }.detail h2 { margin:0 34px 4px 0; font:500 2rem/1 Georgia,serif; letter-spacing:-.035em; }.detail p { margin:0 0 14px; color:var(--muted); }.detail dt { font-size:.67rem; font-weight:750; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-top:12px; }.detail dd { margin:2px 0; }.close { position:absolute; right:13px; top:10px; font-size:1.6rem; color:var(--muted); }footer { margin-top:40px; color:var(--muted); font-size:.78rem; border-top:1px solid var(--line); padding-top:16px; }
+@media (max-width:650px) { .shell { padding:18px 16px 48px; }header { align-items:flex-start; flex-direction:column; padding-top:28px; }.counts { gap:18px; }.shelf { grid-template-columns:repeat(3,1fr); gap:18px 12px; }.book-title { font-size:.81rem; }.controls { align-items:stretch; }.views { width:100%; }input { width:100%; }.year { grid-template-columns:1fr; gap:12px; }.detail { grid-template-columns:96px 1fr; gap:16px; padding:20px; }.detail h2 { font-size:1.55rem; }.map { margin:0 -4px; }}
+</style>
+<link rel="stylesheet" href="../../style.css">
+<style>
+  /* blog theme overrides for the atlas */
+  :root { --ink:#1a1a2e; --muted:#6b7280; --paper:#ffffff; --card:#f8fafc; --line:#e5e7eb; --accent:#1e3a5f; --rose:#2563eb; --gold:#2563eb; --shadow:0 8px 24px rgba(30,58,95,.08); }
+  body { font-family:"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:#fff; line-height:1.6; }
+  .shell { max-width:1100px; padding:12px 1.5rem 56px; }
+  header { padding:32px 0 22px; border-bottom:1px solid var(--line); }
+  h1 { font:700 2.2rem/1.15 "Inter", system-ui, sans-serif; letter-spacing:-.02em; color:#1e3a5f; margin:6px 0 12px; }
+  .eyebrow { color:#2563eb; font-weight:600; letter-spacing:.08em; font-size:.72rem; }
+  .lede { max-width:720px; font-size:1rem; }
+  .count b { font:700 1.7rem/1 "Inter", system-ui, sans-serif; color:#1e3a5f; }
+  .controls { border-bottom:1px solid var(--line); }
+  .view { color:#6b7280; } .view.active { background:#1e3a5f; color:#fff; }
+  select, input, button { font-family:inherit; }
+  .book-title, .timeline-book b, .year-label, .detail h2, .map-tip b, .cluster-label { font-family:"Inter", system-ui, sans-serif; }
+  .book-title { font-weight:600; }
+  .year-label { color:#1e3a5f; font:700 1.3rem/1.1 "Inter", system-ui, sans-serif; text-transform:none; letter-spacing:0; margin:0; padding:0; background:none; border-radius:0; display:block; }
+  .year-count { text-transform:none; letter-spacing:0; } .format-bar { background:#e5e7eb; }
+  .pill { background:#dbeafe; color:#2563eb; } .pill.want { background:#f1f5f9; color:#475569; }
+  .timeline-book { background:#fff; } .timeline-book:hover { border-color:#2563eb; }
+  .map { background:#f8fafc; } .gnode .lbl { stroke:#f8fafc; } .map-tip { background:rgba(255,255,255,.96); }
+  .detail h2 { font-weight:700; color:#1e3a5f; letter-spacing:-.01em; font-size:1.6rem; } .detail a.near { color:#2563eb; }
+  .foot, .atlas-foot { color:#6b7280; }
+  a { color:#2563eb; }
+  nav { margin-bottom:0; } body > footer { margin-top:0; }
+  /* when shown inside the blog post's iframe: no nav/footer, tighter header */
+  html.embedded nav, html.embedded body > footer { display:none; }
+  html.embedded .shell { padding-top:4px; } html.embedded header { padding-top:12px; }
+</style>
+<script>if (window.self !== window.top) document.documentElement.classList.add("embedded");</script>
+</head>
+<body>
+<nav><div class="nav-inner"><span class="nav-brand">Ritwik Sinha</span><ul class="nav-links">
+<li><a href="../../index.html">Home</a></li><li><a href="../../work.html">Research</a></li><li><a href="../../publications.html">Publications</a></li>
+<li><a href="../../patents.html">Patents</a></li><li><a href="../../family.html">Family</a></li><li><a href="../index.html" class="active">Blog</a></li></ul></div></nav>
+<main class="shell">
+<header><div><div class="eyebrow">Personal library, 2026</div><h1>Reading Atlas</h1><p class="lede">The books I have read from 2017 to September 2026. Somewhere around 2017 I moved almost entirely to digital, so these came to me on a Kindle, from the county library through Libby, or on Spotify and Audible. I will admit to some cheating: a fair number were not read but listened to, and I count them anyway. The dates are when I finished each one, as best I can reconstruct.</p></div><div><div class="counts"><div class="count"><b id="read-count">-</b><span>read</span></div><div class="count"><b id="want-count">-</b><span>to read</span></div><div class="count"><b id="book-count">-</b><span>unique works</span></div></div></div></header>
+<section class="controls"><div class="views"><button class="view active" data-view="shelf">Shelf</button><button class="view" data-view="timeline">Read timeline</button><button class="view" data-view="map">Subject constellation</button></div><select id="status"><option value="all">All books</option><option value="read">Read</option><option value="want">To read</option></select><select id="format"><option value="all">Any format</option></select><select id="sort"><option value="date">Sort: latest read evidence</option><option value="author">Sort: author</option><option value="title">Sort: title</option></select><input id="search" type="search" placeholder="Search title or author"><button class="copy" id="copy">Copy current shelf</button><span class="copy-status" id="copy-status"></span></section>
+<section id="shelf" class="view-panel active"><div id="shelf-grid" class="shelf"></div></section>
+<section id="timeline" class="view-panel"><p class="timeline-note">Read timeline. Each placement uses the latest observed read-related library, borrowing, purchase, or acquisition record, rather than a claimed finish date. Books marked only “to read” are deliberately excluded.</p><div id="timeline-list" class="timeline"></div></section>
+<section id="map" class="view-panel"><p class="map-note">Every book is a node; edges join each book to its nearest neighbours by <b>meaning</b> — cosine similarity of sentence embeddings of a short description (all-mpnet-base-v2, run locally), with a small bonus for the same author (dashed) or the same shelf. Mutual 4-nearest-neighbour graph, laid out by d3-force from a UMAP seed. Colour is the shelf; dashed frame = to read. Drag nodes, scroll to zoom, hover to see neighbours, click for details.</p><div id="map-key" class="map-key"></div><div class="map"><svg id="constellation" role="img" aria-label="Force-directed graph of books linked by similarity"></svg><div id="map-tip" class="map-tip"></div></div></section>
+<footer>Generated from selected works on <span id="generated">-</span>. Covers and bibliographic categories come only from the local metadata cache; Atlas performs no live catalog or cover search.</footer>
+</main><dialog id="detail-dialog"><button class="close" aria-label="Close">x</button><div id="detail" class="detail"></div></dialog>
+<script src="vendor/d3.v7.min.js"></script>
+<script>
+const state={books:[],active:"shelf"}; const $=s=>document.querySelector(s); const esc=v=>String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const hue=t=>[...t].reduce((n,c)=>(n*31+c.charCodeAt(0))%360,17); const palette=["#506b73","#a96f72","#bb914d","#718866","#796d92","#5e8b90"];
+function selected(){const q=$("#search").value.trim().toLowerCase(),status=$("#status").value,format=$("#format").value,sort=$("#sort").value; return state.books.filter(b=>(status==="all"||b.status===status)&&(format==="all"||b.formats.includes(format))&&(!q||`${b.title} ${b.subtitle} ${b.author}`.toLowerCase().includes(q))).sort((a,b)=>sort==="author"?(a.author+b.title).localeCompare(b.author+a.title):sort==="title"?a.title.localeCompare(b.title):String(b.whenRead).localeCompare(String(a.whenRead))||a.title.localeCompare(b.title));}
+function cover(book,detail=false){const h=hue(book.id),style=`--cover-a:hsl(${h} 24% 66%);--cover-b:hsl(${(h+42)%360} 25% 34%)`;const cls=detail?"cover-wrap":"cover-wrap";return `<div class="${cls}" style="${style}"><div class="cover-fallback">${esc(book.title)}</div>${book.coverUrl?`<img class="cover-img" src="${esc(book.coverUrl)}" alt="Cover of ${esc(book.title)}" onerror="this.remove()">`:""}</div>`;}
+function card(book){return `<button class="book" data-id="${book.id}" aria-label="View ${esc(book.title)} by ${esc(book.author)}">${cover(book)}<span class="book-title">${esc(book.title)}</span>${book.subtitle?`<span class="book-subtitle">${esc(book.subtitle)}</span>`:""}<span class="book-author">${esc(book.author)}</span><span class="pill ${book.status}">${book.status==="want"?"to read":"read"}</span></button>`;}
+function detail(id){const b=state.books.find(x=>x.id===id); if(!b) return; const g=graphState.data; const gn=g&&g.nodes.find(n=>n.id===id); const shelf=gn&&g.shelves[gn.shelf]||"";
+  const cover=b.coverUrl?`<div class="detail-cover"><img src="${b.coverUrl}" alt="Cover of ${esc(b.title)}"></div>`:`<div class="detail-cover placeholder-cover">${esc(b.title)}</div>`;
+  const near=gn?(()=>{const ids=new Set(); g.links.forEach(l=>{ if(l.source===id) ids.add(l.target); if(l.target===id) ids.add(l.source); }); return [...ids].map(i=>g.nodes.find(n=>n.id===i)).filter(Boolean).slice(0,6);})():[];
+  $("#detail").innerHTML=`${cover}<div><h2>${esc(b.title)}</h2>${b.subtitle?`<p>${esc(b.subtitle)}</p>`:""}<p>${esc(b.author)}</p><dl>
+    <dt>Status</dt><dd>${b.status==="want"?"To read":"Read"}${b.whenRead?" · "+b.whenRead:""}</dd>
+    ${b.dateBasis?`<dt>Date basis</dt><dd>${esc(b.dateBasis)}</dd>`:""}
+    <dt>Sources</dt><dd>${esc(b.sources.join(" · "))}</dd>
+    <dt>Format</dt><dd>${esc(b.formats.join(" · "))}</dd>
+    ${shelf?`<dt>Shelf</dt><dd>${esc(shelf)}</dd>`:""}
+    ${near.length?`<dt>Nearest in the constellation</dt><dd>${near.map(n=>`<a href="#" data-id="${n.id}" class="near">${esc(n.title)}</a>`).join(" · ")}</dd>`:""}
+  </dl></div>`;
+  $("#detail").querySelectorAll("a.near").forEach(a=>a.onclick=e=>{e.preventDefault(); detail(a.dataset.id);});
+  const dlg=$("#detail-dialog"); if(!dlg.open) dlg.showModal(); }
+const openDetail = detail;
+function bind(root,selector){root.querySelectorAll(selector).forEach(el=>el.onclick=()=>detail(el.dataset.id));}
+function shelf(){const books=selected(); $("#shelf-grid").innerHTML=books.length?books.map(card).join(""):'<p class="empty">No books match this view.</p>';bind($("#shelf-grid"),".book");}
+function timeline(){const groups=new Map(); state.books.filter(b=>b.status==="read"&&b.whenRead).forEach(b=>{const y=b.whenRead.slice(0,4);if(!groups.has(y))groups.set(y,[]);groups.get(y).push(b);});$("#timeline-list").innerHTML=[...groups.entries()].sort((a,b)=>b[0].localeCompare(a[0])).map(([year,books])=>{const formats=[...new Set(books.flatMap(b=>b.formats))];return `<div class="year"><div class="year-label">${year}<span class="year-count">${books.length} read</span><div class="format-bar">${formats.map((f,i)=>`<span style="width:${100*books.filter(b=>b.formats.includes(f)).length/books.length}%;background:${palette[i%palette.length]}"></span>`).join("")}</div></div><div class="timeline-books">${books.sort((a,b)=>b.whenRead.localeCompare(a.whenRead)).map(b=>`<button class="timeline-book" data-id="${b.id}">${b.coverUrl?`<img class="thumb" src="${b.coverUrl}" alt="" loading="lazy">`:`<span class="thumb ph"></span>`}<span class="tb-text"><b>${esc(b.title)}</b><span>${esc(b.author)} · ${b.whenRead}</span></span></button>`).join("")}</div></div>`;}).join("")||'<p class="empty">No dated read evidence is available yet.</p>';bind($("#timeline-list"),".timeline-book");}
+function overlaps(a,b){const A=new Set(a.subjects),B=new Set(b.subjects);const both=[...A].filter(x=>B.has(x)).length;return both?both/(A.size+B.size-both):0;}
+const PALETTE = {"indian-history":"#b8722c","ancient-world":"#8a6d3b","world-history":"#c9964a","spy-thriller":"#4b5d8c","classic-fiction":"#8c3f4a","literary-fiction":"#b36c70","sf-fantasy":"#5b7f8c","myth-epic":"#7a6d94","humour-memoir":"#c98a3a","popular-science":"#3f7d6e","society-economics":"#506b73","language":"#6a8f5a","philosophy-mind":"#7b5e9c","history-of-things":"#9a8a5a"};
+const graphState = { data:null, sim:null, built:false, labels:false, shelfFilter:"" };
+async function loadGraph(){ if(graphState.data) return graphState.data; const r=await fetch("data/graph.json",{cache:"no-store"}); graphState.data=await r.json(); return graphState.data; }
+async function constellation(){
+  const g = await loadGraph(); const svgEl=$("#constellation"); const W=svgEl.clientWidth||1000, H=svgEl.clientHeight||600;
+  const visible = new Set(selected().map(b=>b.id));
+  const shelves = Object.entries(g.shelves);
+  $("#map-key").innerHTML = shelves.map(([k,l])=>`<span data-shelf="${k}" class="${graphState.shelfFilter===k?'sel':''}" style="cursor:pointer"><i style="background:${PALETTE[k]||'#888'}"></i>${esc(l)}</span>`).join("")
+    + `<button id="lbl-toggle">${graphState.labels?"Hide":"Show"} all titles</button><button id="relax">Re-layout</button><button id="fit">Fit</button>`;
+  $("#map-key").querySelectorAll("span[data-shelf]").forEach(el=>el.onclick=()=>{ graphState.shelfFilter = graphState.shelfFilter===el.dataset.shelf ? "" : el.dataset.shelf; constellation(); });
+  $("#lbl-toggle").onclick=()=>{ graphState.labels=!graphState.labels; $("#constellation").classList.toggle("labels-on", graphState.labels); $("#lbl-toggle").textContent=(graphState.labels?"Hide":"Show")+" all titles"; };
+  if (graphState.built) { graphState.applyFilter(); $("#relax").onclick=()=>graphState.sim.alpha(.6).restart(); $("#fit").onclick=()=>graphState.fitView(); return; }
+  if (graphState.building) return; graphState.building = true;
+
+  const nodes = g.nodes.map(n=>({...n, x:n.x*(W-120)+60, y:n.y*(H-120)+60}));
+  const byId = new Map(nodes.map(n=>[n.id,n]));
+  const links = g.links.map(l=>({...l, source:byId.get(l.source), target:byId.get(l.target)}));
+  const neigh = new Map(nodes.map(n=>[n.id,new Set()])); links.forEach(l=>{neigh.get(l.source.id).add(l.target.id); neigh.get(l.target.id).add(l.source.id);});
+  const svg = d3.select(svgEl).attr("viewBox",[0,0,W,H]); svg.selectAll("*").remove();
+  const root = svg.append("g");
+  const R = n => n.status==="read" ? 22 : 16;
+  const edge = root.append("g").selectAll("line").data(links).join("line").attr("class",l=>"edge"+(l.same_author?" author":"")).attr("stroke-width",l=>0.6+l.w*2.2);
+  const node = root.append("g").selectAll("g").data(nodes).join("g").attr("class",n=>"gnode "+n.status).attr("tabindex",0)
+    .call(d3.drag().on("start",(e,d)=>{ if(!e.active) graphState.sim.alphaTarget(.3).restart(); d.fx=d.x; d.fy=d.y; })
+                   .on("drag",(e,d)=>{ d.fx=e.x; d.fy=e.y; }).on("end",(e,d)=>{ if(!e.active) graphState.sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+  node.each(function(n){ const el=d3.select(this), r=R(n); const id="clip-"+n.id; el.append("clipPath").attr("id",id).append("circle").attr("r",r);
+    if(n.cover) el.append("image").attr("href",n.cover).attr("x",-r).attr("y",-r).attr("width",2*r).attr("height",2*r).attr("preserveAspectRatio","xMidYMid slice").attr("clip-path",`url(#${id})`);
+    else el.append("circle").attr("r",r).attr("fill",PALETTE[n.shelf]||"#999").attr("opacity",.55);
+    el.append("circle").attr("class","frame").attr("r",r).attr("stroke",PALETTE[n.shelf]||"#888");
+    el.append("text").attr("class","lbl").attr("x",r+4).attr("y",4).text(n.title.length>30?n.title.slice(0,29)+"…":n.title);
+    el.append("circle").attr("class","hit").attr("r",r).attr("fill","transparent"); });
+  const tip=$("#map-tip");
+  node.on("mouseenter",(e,n)=>{ const nb=neigh.get(n.id); const kinN=nodes.filter(m=>m.shelf===n.shelf&&m.id!==n.id&&!nb.has(m.id)).length;
+      node.classed("hot",m=>m.id===n.id||nb.has(m.id)).classed("kin",m=>m.shelf===n.shelf&&m.id!==n.id&&!nb.has(m.id)).classed("dim",m=>m.id!==n.id&&!nb.has(m.id)&&m.shelf!==n.shelf);
+      edge.classed("hot",l=>l.source.id===n.id||l.target.id===n.id).classed("dim",l=>l.source.id!==n.id&&l.target.id!==n.id);
+      const nbs=[...nb].map(i=>byId.get(i)).sort((a,b)=>a.title.localeCompare(b.title)).slice(0,6); tip.style.display="block";
+      tip.innerHTML=`<b>${esc(n.title)}</b><span>${esc(n.author)}${n.when?" · read "+n.when:" · to read"}</span><span><i style="background:${PALETTE[n.shelf]||'#888'}"></i>shelf: <b>${esc(g.shelves[n.shelf]||"—")}</b> (${kinN} more, half-lit)</span><span>nearest: ${nbs.map(m=>esc(m.title)).join(" · ")}</span>`; })
+      .on("mouseleave",()=>{ node.classed("hot",false).classed("kin",false).classed("dim",false); edge.classed("hot",false).classed("dim",false); tip.style.display="none"; applyFilter(); })
+      .on("click",(e,n)=>openDetail(n.id)).on("keydown",(e,n)=>{ if(e.key==="Enter") openDetail(n.id); });
+  const zoom = d3.zoom().scaleExtent([.3,4]).on("zoom",e=>root.attr("transform",e.transform)); svg.call(zoom);
+  function fitView(){ const xs=nodes.map(n=>n.x), ys=nodes.map(n=>n.y); const pad=40, x0=Math.min(...xs)-pad, x1=Math.max(...xs)+pad, y0=Math.min(...ys)-pad, y1=Math.max(...ys)+pad;
+    const k=Math.min(W/(x1-x0), H/(y1-y0), 1.6); svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(W/2-k*(x0+x1)/2, H/2-k*(y0+y1)/2).scale(k)); }
+  graphState.fitView = fitView;
+  graphState.sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d=>d.id).distance(l=>55+(1-l.w)*120).strength(l=>0.25+l.w*0.6))
+    .force("charge", d3.forceManyBody().strength(-140))
+    .force("collide", d3.forceCollide().radius(n=>R(n)+3).iterations(2))
+    .force("x", d3.forceX(n=>n.x).strength(.08)).force("y", d3.forceY(n=>n.y).strength(.08))
+    .force("center", d3.forceCenter(W/2,H/2).strength(.02))
+    .alpha(1).alphaDecay(.03)
+    .on("tick",()=>{ edge.attr("x1",l=>l.source.x).attr("y1",l=>l.source.y).attr("x2",l=>l.target.x).attr("y2",l=>l.target.y); node.attr("transform",n=>`translate(${n.x},${n.y})`); })
+    .on("end", fitView);
+  $("#relax").onclick=()=>graphState.sim.alpha(.6).restart();
+  function applyFilter(){ const vis = new Set(selected().map(b=>b.id)); const sf=graphState.shelfFilter;
+    node.classed("dim", n=>!vis.has(n.id) || (sf && n.shelf!==sf));
+    edge.classed("dim", l=>!vis.has(l.source.id)||!vis.has(l.target.id)||(sf&&(l.source.shelf!==sf||l.target.shelf!==sf))); }
+  graphState.applyFilter = applyFilter; applyFilter(); graphState.built = true; $("#fit").onclick=fitView;
+}
+function applyFilter(){ if(graphState.applyFilter) graphState.applyFilter(); }
+function render(){shelf();timeline();const pane=state.active;document.querySelectorAll(".view-panel").forEach(el=>el.classList.toggle("active",el.id===pane));document.querySelectorAll(".view").forEach(el=>el.classList.toggle("active",el.dataset.view===pane));if(pane==="map")constellation();}
+async function copyShelf(){const lines=selected().map(b=>`- ${b.title}${b.subtitle?": "+b.subtitle:""} — ${b.author} (${b.status})`);try{await navigator.clipboard.writeText(lines.join("\n"));$("#copy-status").textContent=`Copied ${lines.length} books.`;}catch(e){$("#copy-status").textContent="Clipboard access was unavailable.";}}
+async function init(){try{const response=await fetch("data/reading_atlas.json",{cache:"no-store"});if(!response.ok)throw Error(response.status);const payload=await response.json();state.books=payload.books; loadGraph().catch(()=>{});$("#generated").textContent=payload.generated;const formats=[...new Set(state.books.flatMap(b=>b.formats))].sort();$("#format").insertAdjacentHTML("beforeend",formats.map(f=>`<option value="${esc(f)}">${esc(f)}</option>`).join(""));$("#read-count").textContent=state.books.filter(b=>b.status==="read").length;$("#want-count").textContent=state.books.filter(b=>b.status==="want").length;$("#book-count").textContent=state.books.length;render();}catch(e){$("#shelf-grid").innerHTML='<p class="empty">Atlas data could not be loaded. </p>';}}
+document.querySelectorAll(".view").forEach(el=>el.onclick=()=>{state.active=el.dataset.view;render();});["status","format","sort","search"].forEach(id=>$("#"+id).addEventListener(id==="search"?"input":"change",render));$("#copy").onclick=copyShelf;$(".close").onclick=()=>$("#detail-dialog").close();window.addEventListener("resize",()=>{if(state.active==="map")constellation();});init();
+</script><footer>&copy; 2026 Ritwik Sinha &nbsp;·&nbsp; Cupertino, CA</footer>
+</body></html>

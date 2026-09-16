@@ -1,0 +1,2673 @@
+{
+ "model": "all-mpnet-base-v2",
+ "k": 4,
+ "author_bonus": 0.15,
+ "shelf_bonus": 0.06,
+ "shelves": {
+  "indian-history": "Indian history & politics",
+  "ancient-world": "Ancient world & archaeology",
+  "world-history": "World history & empire",
+  "spy-thriller": "Spy & thriller",
+  "classic-fiction": "Classic fiction",
+  "literary-fiction": "Contemporary fiction",
+  "sf-fantasy": "SF & fantasy",
+  "myth-epic": "Myth & epic",
+  "humour-memoir": "Humour & memoir",
+  "popular-science": "Popular science",
+  "society-economics": "Society, economics & ideas",
+  "language": "Language",
+  "philosophy-mind": "Philosophy & mind",
+  "history-of-things": "Histories of things"
+ },
+ "nodes": [
+  {
+   "id": "book-5775142f49a1",
+   "title": "The Stranger",
+   "author": "Albert Camus",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-5775142f49a1.jpg",
+   "when": "2017-01",
+   "x": 0.27267494797706604,
+   "y": 0.7821305990219116
+  },
+  {
+   "id": "book-c34e51144bbc",
+   "title": "For Whom the Bell Tolls",
+   "author": "Ernest Hemingway",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-c34e51144bbc.jpg",
+   "when": "2017-01",
+   "x": 0.19905036687850952,
+   "y": 0.7925999760627747
+  },
+  {
+   "id": "book-eb72308f184c",
+   "title": "Catch-22",
+   "author": "Joseph Heller",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-eb72308f184c.jpg",
+   "when": "2017-01",
+   "x": 0.42862752079963684,
+   "y": 0.7911402583122253
+  },
+  {
+   "id": "book-6263c35108aa",
+   "title": "The Code Book",
+   "author": "Simon Singh",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-6263c35108aa.jpg",
+   "when": "2017-01",
+   "x": 0.5321267247200012,
+   "y": 0.20947299897670746
+  },
+  {
+   "id": "book-619859680214",
+   "title": "Homo Deus",
+   "author": "Yuval Noah Harari",
+   "status": "read",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-619859680214.jpg",
+   "when": "2017-03",
+   "x": 0.6004314422607422,
+   "y": 0.014392624609172344
+  },
+  {
+   "id": "book-3d562a4cf07e",
+   "title": "Sapiens",
+   "author": "Yuval Noah Harari",
+   "status": "read",
+   "shelf": "world-history",
+   "cover": "data/covers/book-3d562a4cf07e.jpg",
+   "when": "2017-03",
+   "x": 0.5753785967826843,
+   "y": 0.05032387748360634
+  },
+  {
+   "id": "book-7962cbb2f2c0",
+   "title": "Aurangzeb",
+   "author": "Audrey Truschke",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-7962cbb2f2c0.jpg",
+   "when": "2017-05",
+   "x": 0.6981669068336487,
+   "y": 0.610198974609375
+  },
+  {
+   "id": "book-5278319ee02b",
+   "title": "Gandhi before India",
+   "author": "Ramachandra Guha",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-5278319ee02b.jpg",
+   "when": "2017-08",
+   "x": 0.9388200640678406,
+   "y": 0.5214701294898987
+  },
+  {
+   "id": "book-58d3b27c1d4c",
+   "title": "I'm Not a Terrorist, But I've Played One On TV",
+   "author": "Maz Jobrani",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-58d3b27c1d4c.jpg",
+   "when": "2017-11",
+   "x": 0.3748392164707184,
+   "y": 0.6864194869995117
+  },
+  {
+   "id": "book-a97f189b4f26",
+   "title": "Last Train to Istanbul",
+   "author": "Ayşe Kulin",
+   "status": "read",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-a97f189b4f26.jpg",
+   "when": "2017-12",
+   "x": 0.4653480052947998,
+   "y": 0.9465051293373108
+  },
+  {
+   "id": "book-71660c3aa38e",
+   "title": "Periyar",
+   "author": "Bala Jeyaraman",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-71660c3aa38e.jpg",
+   "when": "2017-12",
+   "x": 0.9235896468162537,
+   "y": 0.5423546433448792
+  },
+  {
+   "id": "book-54f902a86185",
+   "title": "Shit My Dad Says",
+   "author": "Justin Halpern",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-54f902a86185.jpg",
+   "when": "2017-12",
+   "x": 0.3032754361629486,
+   "y": 0.44346800446510315
+  },
+  {
+   "id": "book-2c6b1e5884e9",
+   "title": "Nine Lives",
+   "author": "William Dalrymple",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-2c6b1e5884e9.jpg",
+   "when": "2017-12",
+   "x": 0.826856791973114,
+   "y": 0.46326735615730286
+  },
+  {
+   "id": "book-59ee2e54bb65",
+   "title": "Weapons of Math Destruction",
+   "author": "Cathy O'Neil",
+   "status": "read",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-59ee2e54bb65.jpg",
+   "when": "2018-04",
+   "x": 0.7127441763877869,
+   "y": 0.12259704619646072
+  },
+  {
+   "id": "book-f58e102cd1b5",
+   "title": "The Simpsons and Their Mathematical Secrets",
+   "author": "Simon Singh",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-f58e102cd1b5.jpg",
+   "when": "2018-04",
+   "x": 0.4157896637916565,
+   "y": 0.17021901905536652
+  },
+  {
+   "id": "book-1d6905cca5c2",
+   "title": "Verdicts on Nehru",
+   "author": "Ramachandra Guha",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-1d6905cca5c2.jpg",
+   "when": "2018-07",
+   "x": 0.982793927192688,
+   "y": 0.5000346302986145
+  },
+  {
+   "id": "book-f4289f265cb5",
+   "title": "Gandhi",
+   "author": "Ramachandra Guha",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-f4289f265cb5.jpg",
+   "when": "2018-10",
+   "x": 0.9279830455780029,
+   "y": 0.45656245946884155
+  },
+  {
+   "id": "book-18e307f0fd38",
+   "title": "21 Lessons for the 21st Century",
+   "author": "Yuval Noah Harari",
+   "status": "read",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-18e307f0fd38.jpg",
+   "when": "2018-10",
+   "x": 0.6096389889717102,
+   "y": 0.021874988451600075
+  },
+  {
+   "id": "book-42e4ab7b84fe",
+   "title": "Harry Potter and the Half-Blood Prince, Book 6",
+   "author": "J.K. Rowling",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-42e4ab7b84fe.jpg",
+   "when": "2018-12",
+   "x": 0.15830864012241364,
+   "y": 0.37650927901268005
+  },
+  {
+   "id": "book-4c12a8b56b06",
+   "title": "Born a Crime",
+   "author": "Trevor Noah",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-4c12a8b56b06.jpg",
+   "when": "2019-02",
+   "x": 0.22360242903232574,
+   "y": 0.6836278438568115
+  },
+  {
+   "id": "book-5545e9ae94fc",
+   "title": "Travels with Charley in Search of America",
+   "author": "John Steinbeck",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-5545e9ae94fc.jpg",
+   "when": "2019-07",
+   "x": 0.0,
+   "y": 0.7211825847625732
+  },
+  {
+   "id": "book-12cd6120b92d",
+   "title": "India After Gandhi",
+   "author": "Ramachandra Guha",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-12cd6120b92d.jpg",
+   "when": "2019-07",
+   "x": 1.0,
+   "y": 0.5241791605949402
+  },
+  {
+   "id": "book-4700b44215f3",
+   "title": "Nudge",
+   "author": "Cass R. Sunstein Richard H. Thaler",
+   "status": "read",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-4700b44215f3.jpg",
+   "when": "2019-10",
+   "x": 0.6800519227981567,
+   "y": 0.005007646512240171
+  },
+  {
+   "id": "book-64d26d20b4ea",
+   "title": "Outliers",
+   "author": "Malcolm Gladwell",
+   "status": "read",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-64d26d20b4ea.jpg",
+   "when": "2019-10",
+   "x": 0.43415331840515137,
+   "y": 0.4841502904891968
+  },
+  {
+   "id": "book-23cd6f14beb3",
+   "title": "Scale",
+   "author": "Geoffrey West",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-23cd6f14beb3.jpg",
+   "when": "2019-11",
+   "x": 0.6055816411972046,
+   "y": 0.11991696059703827
+  },
+  {
+   "id": "book-863a20c8c3f7",
+   "title": "A Short History of Nearly Everything",
+   "author": "Bill Bryson",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-863a20c8c3f7.jpg",
+   "when": "2019-12",
+   "x": 0.3038690984249115,
+   "y": 0.2263868749141693
+  },
+  {
+   "id": "book-2022fcf2fe4a",
+   "title": "Astrophysics for People in a Hurry",
+   "author": "Neil deGrasse Tyson",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-2022fcf2fe4a.jpg",
+   "when": "2020-01",
+   "x": 0.29227501153945923,
+   "y": 0.15598058700561523
+  },
+  {
+   "id": "book-49ef0a950904",
+   "title": "The Anarchy",
+   "author": "William Dalrymple",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-49ef0a950904.jpg",
+   "when": "2020-01",
+   "x": 0.7914769649505615,
+   "y": 0.5824610590934753
+  },
+  {
+   "id": "book-994663092753",
+   "title": "Swami and Friends, The Bachelor of Arts, The Dark Room, The English Teacher",
+   "author": "R. K. Narayan",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-994663092753.jpg",
+   "when": "2020-02",
+   "x": 0.7706066966056824,
+   "y": 0.7215726971626282
+  },
+  {
+   "id": "book-676a592cdef9",
+   "title": "Contact",
+   "author": "Carl Sagan",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-676a592cdef9.jpg",
+   "when": "2020-03",
+   "x": 0.3170437216758728,
+   "y": 0.038687095046043396
+  },
+  {
+   "id": "book-7acc86693a0b",
+   "title": "Cosmos",
+   "author": "Carl Sagan",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-7acc86693a0b.jpg",
+   "when": "2020-03",
+   "x": 0.27973952889442444,
+   "y": 0.10105392336845398
+  },
+  {
+   "id": "book-18f3fb91eea1",
+   "title": "The Science of Sci-Fi",
+   "author": "Erin Macdonald",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-18f3fb91eea1.jpg",
+   "when": "2020-03",
+   "x": 0.33217498660087585,
+   "y": 0.11139535903930664
+  },
+  {
+   "id": "book-eae60a9c54f4",
+   "title": "The Black Swan, Second Edition",
+   "author": "Nassim Nicholas Taleb",
+   "status": "read",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-eae60a9c54f4.jpg",
+   "when": "2020-05",
+   "x": 0.6936221122741699,
+   "y": 0.15136954188346863
+  },
+  {
+   "id": "book-db66347b4843",
+   "title": "The Other Side of History",
+   "author": "Robert Garland",
+   "status": "read",
+   "shelf": "ancient-world",
+   "cover": "data/covers/book-db66347b4843.jpg",
+   "when": "2020-05",
+   "x": 0.6181545257568359,
+   "y": 0.4060899019241333
+  },
+  {
+   "id": "book-b7d17e7b8555",
+   "title": "Return of a King",
+   "author": "William Dalrymple",
+   "status": "read",
+   "shelf": "world-history",
+   "cover": "data/covers/book-b7d17e7b8555.jpg",
+   "when": "2020-07",
+   "x": 0.7212031483650208,
+   "y": 0.5399224162101746
+  },
+  {
+   "id": "book-c3d716943daf",
+   "title": "The Mother Tongue",
+   "author": "Bill Bryson",
+   "status": "read",
+   "shelf": "language",
+   "cover": "data/covers/book-c3d716943daf.jpg",
+   "when": "2020-10",
+   "x": 0.33400335907936096,
+   "y": 0.3649561405181885
+  },
+  {
+   "id": "book-3507c25733d8",
+   "title": "The Story of Human Language",
+   "author": "John McWhorter",
+   "status": "read",
+   "shelf": "language",
+   "cover": "data/covers/book-3507c25733d8.jpg",
+   "when": "2020-10",
+   "x": 0.37609145045280457,
+   "y": 0.32344746589660645
+  },
+  {
+   "id": "book-d547e2799d7e",
+   "title": "A House for Mr. Biswas",
+   "author": "V. S. Naipaul",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-d547e2799d7e.jpg",
+   "when": "2020-10",
+   "x": 0.5595185160636902,
+   "y": 0.7809388041496277
+  },
+  {
+   "id": "book-fc32d537509d",
+   "title": "A Promised Land",
+   "author": "Barack Obama",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-fc32d537509d.jpg",
+   "when": "2020-12",
+   "x": 0.12446220219135284,
+   "y": 0.6920340061187744
+  },
+  {
+   "id": "book-14c4077610e5",
+   "title": "Thing Explainer",
+   "author": "Randall Munroe",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-14c4077610e5.jpg",
+   "when": "2021-01",
+   "x": 0.3471960127353668,
+   "y": 0.22877243161201477
+  },
+  {
+   "id": "book-d448531fb97d",
+   "title": "Land of Two Rivers",
+   "author": "Nitish Sengupta",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-d448531fb97d.jpg",
+   "when": "2021-05",
+   "x": 0.8688985705375671,
+   "y": 0.48108071088790894
+  },
+  {
+   "id": "book-405830734957",
+   "title": "Life, the Universe and Everything",
+   "author": "Douglas Adams",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-405830734957.jpg",
+   "when": "2021-06",
+   "x": 0.25142398476600647,
+   "y": 0.13946641981601715
+  },
+  {
+   "id": "book-e0dac0be5921",
+   "title": "Mostly Harmless",
+   "author": "Douglas Adams",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-e0dac0be5921.jpg",
+   "when": "2021-06",
+   "x": 0.21914252638816833,
+   "y": 0.07639830559492111
+  },
+  {
+   "id": "book-a3d277f759f9",
+   "title": "So Long, and Thanks for All the Fish",
+   "author": "Douglas Adams",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-a3d277f759f9.jpg",
+   "when": "2021-06",
+   "x": 0.16699984669685364,
+   "y": 0.13532918691635132
+  },
+  {
+   "id": "book-6db19503067d",
+   "title": "The Emperor of All Maladies",
+   "author": "Siddhartha Mukherjee",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-6db19503067d.jpg",
+   "when": "2021-06",
+   "x": 0.9710929989814758,
+   "y": 0.37955304980278015
+  },
+  {
+   "id": "book-a3d640ec9a34",
+   "title": "Mythos",
+   "author": "Stephen Fry",
+   "status": "read",
+   "shelf": "myth-epic",
+   "cover": "data/covers/book-a3d640ec9a34.jpg",
+   "when": "2021-06",
+   "x": 0.12908588349819183,
+   "y": 0.5427310466766357
+  },
+  {
+   "id": "book-af598f5562f2",
+   "title": "The Hitch-hiker's Guide to the Galaxy",
+   "author": "Douglas Adams",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-af598f5562f2.jpg",
+   "when": "2021-07",
+   "x": 0.20862020552158356,
+   "y": 0.08984846621751785
+  },
+  {
+   "id": "book-7255cf51e521",
+   "title": "The Prodigal Tongue",
+   "author": "Lynne Murphy",
+   "status": "read",
+   "shelf": "language",
+   "cover": "data/covers/book-7255cf51e521.jpg",
+   "when": "2021-10",
+   "x": 0.40730392932891846,
+   "y": 0.37805813550949097
+  },
+  {
+   "id": "book-4acaf7cb58d7",
+   "title": "Fermat's Enigma",
+   "author": "Simon Singh",
+   "status": "read",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-4acaf7cb58d7.jpg",
+   "when": "2021-10",
+   "x": 0.47846606373786926,
+   "y": 0.2061249017715454
+  },
+  {
+   "id": "book-fef328509ffe",
+   "title": "The Spy Who Came in from the Cold",
+   "author": "John le Carré",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-fef328509ffe.jpg",
+   "when": "2021-11",
+   "x": 0.3829873204231262,
+   "y": 1.0
+  },
+  {
+   "id": "book-964e6ed21653",
+   "title": "The Honourable Schoolboy",
+   "author": "John le Carré",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-964e6ed21653.jpg",
+   "when": "2021-12",
+   "x": 0.35504981875419617,
+   "y": 0.9782877564430237
+  },
+  {
+   "id": "book-504fd0809785",
+   "title": "Tinker, Tailor, Soldier, Spy",
+   "author": "John le Carré",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-504fd0809785.jpg",
+   "when": "2021-12",
+   "x": 0.3721202313899994,
+   "y": 0.903136134147644
+  },
+  {
+   "id": "book-85bc18b85b83",
+   "title": "Heroes",
+   "author": "Stephen Fry",
+   "status": "read",
+   "shelf": "myth-epic",
+   "cover": "data/covers/book-85bc18b85b83.jpg",
+   "when": "2021-12",
+   "x": 0.20205079019069672,
+   "y": 0.5217903852462769
+  },
+  {
+   "id": "book-7e68188da266",
+   "title": "Smiley's People",
+   "author": "John le Carré",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-7e68188da266.jpg",
+   "when": "2022-01",
+   "x": 0.4388194978237152,
+   "y": 0.9250105023384094
+  },
+  {
+   "id": "book-f0cf08957acc",
+   "title": "History of the Ancient World",
+   "author": "Gregory S. Aldrete",
+   "status": "read",
+   "shelf": "ancient-world",
+   "cover": "data/covers/book-f0cf08957acc.jpg",
+   "when": "2022-04",
+   "x": 0.6886739730834961,
+   "y": 0.3526810109615326
+  },
+  {
+   "id": "book-a30e36a7335f",
+   "title": "History's Great Military Blunders and the Lessons They Teach",
+   "author": "Gregory S. Aldrete",
+   "status": "read",
+   "shelf": "world-history",
+   "cover": "data/covers/book-a30e36a7335f.jpg",
+   "when": "2022-04",
+   "x": 0.639003336429596,
+   "y": 0.5222695469856262
+  },
+  {
+   "id": "book-bd0a620df688",
+   "title": "Guns, Germs and Steel",
+   "author": "Jared Diamond",
+   "status": "read",
+   "shelf": "world-history",
+   "cover": "data/covers/book-bd0a620df688.jpg",
+   "when": "2022-05",
+   "x": 0.636618971824646,
+   "y": 0.1765451431274414
+  },
+  {
+   "id": "book-4d0025614229",
+   "title": "The History of the Ancient World",
+   "author": "Susan Wise Bauer",
+   "status": "read",
+   "shelf": "ancient-world",
+   "cover": "data/covers/book-4d0025614229.jpg",
+   "when": "2022-05",
+   "x": 0.6298062801361084,
+   "y": 0.3177390396595001
+  },
+  {
+   "id": "book-09969467beb5",
+   "title": "I, Robot",
+   "author": "Isaac Asimov",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-09969467beb5.jpg",
+   "when": "2022-06",
+   "x": 0.39582785964012146,
+   "y": 0.05962454900145531
+  },
+  {
+   "id": "book-e4e523f65cdd",
+   "title": "A Perfect Spy",
+   "author": "John le Carré",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-e4e523f65cdd.jpg",
+   "when": "2022-12",
+   "x": 0.35813790559768677,
+   "y": 0.9987261891365051
+  },
+  {
+   "id": "book-74f9a167a5c3",
+   "title": "Indian Summer",
+   "author": "Alex von Tunzelmann",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-74f9a167a5c3.jpg",
+   "when": "2023-01",
+   "x": 0.9608669281005859,
+   "y": 0.5924811363220215
+  },
+  {
+   "id": "book-90d87370bc7d",
+   "title": "Gun Island",
+   "author": "Amitav Ghosh",
+   "status": "read",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-90d87370bc7d.jpg",
+   "when": "2023-02",
+   "x": 0.5977234244346619,
+   "y": 0.7444194555282593
+  },
+  {
+   "id": "book-da7b6207567c",
+   "title": "1177 B.C.",
+   "author": "Eric H. Cline",
+   "status": "read",
+   "shelf": "ancient-world",
+   "cover": "data/covers/book-da7b6207567c.jpg",
+   "when": "2023-04",
+   "x": 0.6710535287857056,
+   "y": 0.25183650851249695
+  },
+  {
+   "id": "book-6bb60979af83",
+   "title": "Collapse",
+   "author": "Jared Diamond",
+   "status": "read",
+   "shelf": "world-history",
+   "cover": "data/covers/book-6bb60979af83.jpg",
+   "when": "2023-04",
+   "x": 0.6717908382415771,
+   "y": 0.14824733138084412
+  },
+  {
+   "id": "book-243b70857e34",
+   "title": "The Name of the Rose",
+   "author": "Umberto Eco",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-243b70857e34.jpg",
+   "when": "2023-04",
+   "x": 0.24685664474964142,
+   "y": 0.8355103731155396
+  },
+  {
+   "id": "book-da1b68b6ce16",
+   "title": "Rebel Sultans",
+   "author": "Manu S Pillai",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-da1b68b6ce16.jpg",
+   "when": "2023-08",
+   "x": 0.801853597164154,
+   "y": 0.5542171597480774
+  },
+  {
+   "id": "book-075e3cb44b10",
+   "title": "Never Let Me Go",
+   "author": "Kazuo Ishiguro",
+   "status": "read",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-075e3cb44b10.jpg",
+   "when": "2024-03",
+   "x": 0.19247408211231232,
+   "y": 0.5995079278945923
+  },
+  {
+   "id": "book-f151d9d023e9",
+   "title": "The Fellowship of the Ring",
+   "author": "J.R.R. Tolkien",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-f151d9d023e9.jpg",
+   "when": "2024-05",
+   "x": 0.05387294292449951,
+   "y": 0.4560012221336365
+  },
+  {
+   "id": "book-90e1bc4d641f",
+   "title": "The Two Towers",
+   "author": "J.R.R. Tolkien",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-90e1bc4d641f.jpg",
+   "when": "2024-05",
+   "x": 0.11404406279325485,
+   "y": 0.41720548272132874
+  },
+  {
+   "id": "book-ddd648fe08ab",
+   "title": "The Return of the King",
+   "author": "J.R.R. Tolkien",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-ddd648fe08ab.jpg",
+   "when": "2024-06",
+   "x": 0.05628253147006035,
+   "y": 0.44621050357818604
+  },
+  {
+   "id": "book-7c4fb06a0060",
+   "title": "Sentience",
+   "author": "Nicholas Humphrey",
+   "status": "read",
+   "shelf": "philosophy-mind",
+   "cover": "data/covers/book-7c4fb06a0060.jpg",
+   "when": "2024-06",
+   "x": 0.5405089855194092,
+   "y": 0.0
+  },
+  {
+   "id": "book-4e36acef6180",
+   "title": "Age of Revolutions",
+   "author": "Fareed Zakaria",
+   "status": "read",
+   "shelf": "world-history",
+   "cover": "data/covers/book-4e36acef6180.jpg",
+   "when": "2024-12",
+   "x": 0.8039202094078064,
+   "y": 0.22339457273483276
+  },
+  {
+   "id": "book-0bb0c676bc3a",
+   "title": "Lords of the Deccan",
+   "author": "Anirudh Kanisetti",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-0bb0c676bc3a.jpg",
+   "when": "2025-01",
+   "x": 0.8274630308151245,
+   "y": 0.5569047331809998
+  },
+  {
+   "id": "book-295f6149db36",
+   "title": "The Anthropocene Reviewed",
+   "author": "John Green",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-295f6149db36.jpg",
+   "when": "2025-01",
+   "x": 0.6673241853713989,
+   "y": 0.04400261119008064
+  },
+  {
+   "id": "book-b79d6089f9ac",
+   "title": "James",
+   "author": "Percival Everett",
+   "status": "read",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-b79d6089f9ac.jpg",
+   "when": "2025-01",
+   "x": 0.09936414659023285,
+   "y": 0.788434624671936
+  },
+  {
+   "id": "book-23df18d1f189",
+   "title": "Fragments of an Unbroken Mirror",
+   "author": "Santanu Sinha Chaudhuri",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-23df18d1f189.jpg",
+   "when": "2025-02",
+   "x": 0.9286307096481323,
+   "y": 0.4405868947505951
+  },
+  {
+   "id": "book-feae8fa34f29",
+   "title": "Martyr!",
+   "author": "Kaveh Akbar",
+   "status": "read",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-feae8fa34f29.jpg",
+   "when": "2025-04",
+   "x": 0.41837331652641296,
+   "y": 0.7267820835113525
+  },
+  {
+   "id": "book-4ea32463b515",
+   "title": "The Coming Wave",
+   "author": "Michael Bhaskar Mustafa Suleyman",
+   "status": "read",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-4ea32463b515.jpg",
+   "when": "2025-04",
+   "x": 0.5500583648681641,
+   "y": 0.0840500071644783
+  },
+  {
+   "id": "book-7765a8c4bae8",
+   "title": "The Dogs of War",
+   "author": "Frederick Forsyth",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-7765a8c4bae8.jpg",
+   "when": "2025-06",
+   "x": 0.22612813115119934,
+   "y": 0.9332314729690552
+  },
+  {
+   "id": "book-7ce9a224a032",
+   "title": "The Odessa File",
+   "author": "Frederick Forsyth",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-7ce9a224a032.jpg",
+   "when": "2025-07",
+   "x": 0.40706127882003784,
+   "y": 0.944954514503479
+  },
+  {
+   "id": "book-83858f1fea6a",
+   "title": "The Golden Road",
+   "author": "William Dalrymple",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-83858f1fea6a.jpg",
+   "when": "2025-07",
+   "x": 0.7416214346885681,
+   "y": 0.47379007935523987
+  },
+  {
+   "id": "book-ef5444c609c5",
+   "title": "The Fox",
+   "author": "Frederick Forsyth",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-ef5444c609c5.jpg",
+   "when": "2025-08",
+   "x": 0.3391384482383728,
+   "y": 0.9566014409065247
+  },
+  {
+   "id": "book-2ba79064fda6",
+   "title": "The Great Gatsby",
+   "author": "F. Scott Fitzgerald",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-2ba79064fda6.jpg",
+   "when": "2025-10",
+   "x": 0.1468048393726349,
+   "y": 0.723551869392395
+  },
+  {
+   "id": "book-aa9d8baf7d95",
+   "title": "The Heart of the Matter",
+   "author": "Graham Greene",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-aa9d8baf7d95.jpg",
+   "when": "2025-10",
+   "x": 0.21527646481990814,
+   "y": 0.8363620042800903
+  },
+  {
+   "id": "book-fdc0db0a96e9",
+   "title": "To Kill A Mockingbird",
+   "author": "Harper Lee",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-fdc0db0a96e9.jpg",
+   "when": "2025-11",
+   "x": 0.153890922665596,
+   "y": 0.8015718460083008
+  },
+  {
+   "id": "book-5a6ce5871b32",
+   "title": "The Price of Inequality",
+   "author": "Joseph E. Stiglitz",
+   "status": "read",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-5a6ce5871b32.jpg",
+   "when": "2025-12",
+   "x": 0.7763810157775879,
+   "y": 0.12937457859516144
+  },
+  {
+   "id": "book-76ef59a89b06",
+   "title": "Death of a Salesman",
+   "author": "Arthur Miller",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-76ef59a89b06.jpg",
+   "when": "2026-01",
+   "x": 0.18206441402435303,
+   "y": 0.8693807125091553
+  },
+  {
+   "id": "book-01400d0dbee7",
+   "title": "The Day of the Jackal",
+   "author": "Frederick Forsyth",
+   "status": "read",
+   "shelf": "spy-thriller",
+   "cover": "data/covers/book-01400d0dbee7.jpg",
+   "when": "2026-01",
+   "x": 0.3301936984062195,
+   "y": 0.8917728066444397
+  },
+  {
+   "id": "book-a5ad8b76cc3f",
+   "title": "Fahrenheit 451",
+   "author": "Ray Bradbury",
+   "status": "read",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-a5ad8b76cc3f.jpg",
+   "when": "2026-01",
+   "x": 0.21129149198532104,
+   "y": 0.7010091543197632
+  },
+  {
+   "id": "book-b2b6148b2e13",
+   "title": "In Xanadu",
+   "author": "William Dalrymple",
+   "status": "read",
+   "shelf": "world-history",
+   "cover": "data/covers/book-b2b6148b2e13.jpg",
+   "when": "2026-01",
+   "x": 0.6869446635246277,
+   "y": 0.4866422712802887
+  },
+  {
+   "id": "book-7c26a0cd9631",
+   "title": "The Silk Roads",
+   "author": "Peter Frankopan",
+   "status": "read",
+   "shelf": "world-history",
+   "cover": "data/covers/book-7c26a0cd9631.jpg",
+   "when": "2026-02",
+   "x": 0.6556470990180969,
+   "y": 0.4363064169883728
+  },
+  {
+   "id": "book-eabb2631d7fc",
+   "title": "The Long Shoe",
+   "author": "Bob Mortimer",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-eabb2631d7fc.jpg",
+   "when": "2026-03",
+   "x": 0.4577104449272156,
+   "y": 0.8581745624542236
+  },
+  {
+   "id": "book-52cdbb42ba21",
+   "title": "My Years With Apu",
+   "author": "Satyajit Ray",
+   "status": "read",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-52cdbb42ba21.jpg",
+   "when": "2026-04",
+   "x": 0.8315138220787048,
+   "y": 0.6826402544975281
+  },
+  {
+   "id": "book-3a1e2eb24e74",
+   "title": "After 1177 B.C.",
+   "author": "Eric H. Cline",
+   "status": "read",
+   "shelf": "ancient-world",
+   "cover": "data/covers/book-3a1e2eb24e74.jpg",
+   "when": "2026-05",
+   "x": 0.6487168073654175,
+   "y": 0.23997890949249268
+  },
+  {
+   "id": "book-c327f65031b2",
+   "title": "The Remains of the Day",
+   "author": "Kazuo Ishiguro",
+   "status": "read",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-c327f65031b2.jpg",
+   "when": "2026-06",
+   "x": 0.34734630584716797,
+   "y": 0.8290367126464844
+  },
+  {
+   "id": "book-a0295466d270",
+   "title": "Aunt Julia and the Scriptwriter",
+   "author": "Mario Vargas Llosa",
+   "status": "read",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-a0295466d270.jpg",
+   "when": "2026-08",
+   "x": 0.26947277784347534,
+   "y": 0.7100691795349121
+  },
+  {
+   "id": "book-c2785629138e",
+   "title": "City of Djinns",
+   "author": "William Dalrymple",
+   "status": "read",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-c2785629138e.jpg",
+   "when": "2026-09",
+   "x": 0.7523213028907776,
+   "y": 0.6024375557899475
+  },
+  {
+   "id": "book-80d27e4a25a2",
+   "title": "Twilight in Delhi",
+   "author": "Ahmed Ali",
+   "status": "want",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-80d27e4a25a2.jpg",
+   "when": "",
+   "x": 0.7324929237365723,
+   "y": 0.6727323532104492
+  },
+  {
+   "id": "book-0a554f6d4509",
+   "title": "Smoke and Ashes",
+   "author": "Amitav Ghosh",
+   "status": "want",
+   "shelf": "world-history",
+   "cover": "data/covers/book-0a554f6d4509.jpg",
+   "when": "",
+   "x": 0.8646111488342285,
+   "y": 0.5862223505973816
+  },
+  {
+   "id": "book-5ebbcac0cbef",
+   "title": "The Great Derangement",
+   "author": "Amitav Ghosh",
+   "status": "want",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-5ebbcac0cbef.jpg",
+   "when": "",
+   "x": 0.7247506380081177,
+   "y": 0.06641360372304916
+  },
+  {
+   "id": "book-754677c0cfba",
+   "title": "The Nutmeg's Curse",
+   "author": "Amitav Ghosh",
+   "status": "want",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-754677c0cfba.jpg",
+   "when": "",
+   "x": 0.7410222887992859,
+   "y": 0.03836247697472572
+  },
+  {
+   "id": "book-6a088b2c4d19",
+   "title": "The Arabian Nights",
+   "author": "Andrew Lang",
+   "status": "want",
+   "shelf": "myth-epic",
+   "cover": "data/covers/book-6a088b2c4d19.jpg",
+   "when": "",
+   "x": 0.6821751594543457,
+   "y": 0.6728807091712952
+  },
+  {
+   "id": "book-604b027918b2",
+   "title": "Project Hail Mary",
+   "author": "Andy Weir",
+   "status": "want",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-604b027918b2.jpg",
+   "when": "",
+   "x": 0.17638631165027618,
+   "y": 0.12226924300193787
+  },
+  {
+   "id": "book-3bf529e22108",
+   "title": "The History of Sound",
+   "author": "Ben Shattuck",
+   "status": "want",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-3bf529e22108.jpg",
+   "when": "",
+   "x": 0.28941798210144043,
+   "y": 0.3396707773208618
+  },
+  {
+   "id": "book-f039ea50fbb9",
+   "title": "The Satsuma Complex",
+   "author": "Bob Mortimer",
+   "status": "want",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-f039ea50fbb9.jpg",
+   "when": "",
+   "x": 0.50586998462677,
+   "y": 0.8599552512168884
+  },
+  {
+   "id": "book-31f28b4a9ab1",
+   "title": "The Road",
+   "author": "Cormac McCarthy",
+   "status": "want",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-31f28b4a9ab1.jpg",
+   "when": "",
+   "x": 0.04566699638962746,
+   "y": 0.7572581768035889
+  },
+  {
+   "id": "book-8cdbc34d78fb",
+   "title": "David Mitchell",
+   "author": "David Mitchell",
+   "status": "want",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-8cdbc34d78fb.jpg",
+   "when": "",
+   "x": 0.2613582909107208,
+   "y": 0.5685204863548279
+  },
+  {
+   "id": "book-5482b545e069",
+   "title": "The Four Heavens",
+   "author": "David Stuart",
+   "status": "want",
+   "shelf": "ancient-world",
+   "cover": "data/covers/book-5482b545e069.jpg",
+   "when": "",
+   "x": 0.6893194317817688,
+   "y": 0.3288344442844391
+  },
+  {
+   "id": "book-98d4862bea74",
+   "title": "The Horse, the Wheel, and Language",
+   "author": "David W. Anthony",
+   "status": "want",
+   "shelf": "ancient-world",
+   "cover": "data/covers/book-98d4862bea74.jpg",
+   "when": "",
+   "x": 0.5674474239349365,
+   "y": 0.4488280415534973
+  },
+  {
+   "id": "book-d6f057a939be",
+   "title": "Love, War, and Diplomacy",
+   "author": "Eric H. Cline",
+   "status": "want",
+   "shelf": "ancient-world",
+   "cover": "data/covers/book-d6f057a939be.jpg",
+   "when": "",
+   "x": 0.6261680126190186,
+   "y": 0.2716016173362732
+  },
+  {
+   "id": "book-21e684d8be13",
+   "title": "Does Santa Exist?",
+   "author": "Eric Kaplan",
+   "status": "want",
+   "shelf": "philosophy-mind",
+   "cover": "data/covers/book-21e684d8be13.jpg",
+   "when": "",
+   "x": 0.3733399212360382,
+   "y": 0.18653956055641174
+  },
+  {
+   "id": "book-e755c669d849",
+   "title": "Dune",
+   "author": "Frank Herbert",
+   "status": "want",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-e755c669d849.jpg",
+   "when": "",
+   "x": 0.14310914278030396,
+   "y": 0.6090916991233826
+  },
+  {
+   "id": "book-6a9f846f557d",
+   "title": "How Did We Get Into This Mess?",
+   "author": "George Monbiot",
+   "status": "want",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-6a9f846f557d.jpg",
+   "when": "",
+   "x": 0.7640748620033264,
+   "y": 0.10374713689088821
+  },
+  {
+   "id": "book-147cfd969b28",
+   "title": "Moby Dick",
+   "author": "Herman Melville",
+   "status": "want",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-147cfd969b28.jpg",
+   "when": "",
+   "x": 0.06668106466531754,
+   "y": 0.6734967231750488
+  },
+  {
+   "id": "book-ee34a6c50dbf",
+   "title": "The Iliad",
+   "author": "Homer",
+   "status": "want",
+   "shelf": "myth-epic",
+   "cover": "data/covers/book-ee34a6c50dbf.jpg",
+   "when": "",
+   "x": 0.05798885226249695,
+   "y": 0.5266755819320679
+  },
+  {
+   "id": "book-de8ae851971a",
+   "title": "The Odyssey",
+   "author": "Homer",
+   "status": "want",
+   "shelf": "myth-epic",
+   "cover": "data/covers/book-de8ae851971a.jpg",
+   "when": "",
+   "x": 0.028388461098074913,
+   "y": 0.5975720882415771
+  },
+  {
+   "id": "book-0bdca90b114c",
+   "title": "The Silmarillion",
+   "author": "J.R.R. Tolkien",
+   "status": "want",
+   "shelf": "sf-fantasy",
+   "cover": "data/covers/book-0bdca90b114c.jpg",
+   "when": "",
+   "x": 0.0872613936662674,
+   "y": 0.44370707869529724
+  },
+  {
+   "id": "book-0ca4746f4e38",
+   "title": "Hamilton",
+   "author": "Jeremy McCarter Lin-Manuel Miranda",
+   "status": "want",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-0ca4746f4e38.jpg",
+   "when": "",
+   "x": 0.20903103053569794,
+   "y": 0.4128960072994232
+  },
+  {
+   "id": "book-a9ed2e56233a",
+   "title": "India",
+   "author": "John Keay",
+   "status": "want",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-a9ed2e56233a.jpg",
+   "when": "",
+   "x": 0.8141660094261169,
+   "y": 0.4375251531600952
+  },
+  {
+   "id": "book-d8e02989e437",
+   "title": "Blindness",
+   "author": "José Saramago",
+   "status": "want",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-d8e02989e437.jpg",
+   "when": "",
+   "x": 0.3024137318134308,
+   "y": 0.6899560689926147
+  },
+  {
+   "id": "book-758a11bc03b9",
+   "title": "Horizontal Vertigo",
+   "author": "Juan Villoro",
+   "status": "want",
+   "shelf": "humour-memoir",
+   "cover": "data/covers/book-758a11bc03b9.jpg",
+   "when": "",
+   "x": 0.5540063381195068,
+   "y": 0.3700981140136719
+  },
+  {
+   "id": "book-11e1423f5377",
+   "title": "Gods, Guns & Missionaries",
+   "author": "Manu S. Pillai",
+   "status": "want",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-11e1423f5377.jpg",
+   "when": "",
+   "x": 0.8698959350585938,
+   "y": 0.4990464448928833
+  },
+  {
+   "id": "book-490b2c3cec51",
+   "title": "The Ottomans",
+   "author": "Marc David Baer",
+   "status": "want",
+   "shelf": "world-history",
+   "cover": "data/covers/book-490b2c3cec51.jpg",
+   "when": "",
+   "x": 0.7745692133903503,
+   "y": 0.43975064158439636
+  },
+  {
+   "id": "book-3b54cae7f1c8",
+   "title": "The Subtle Art of Not Giving a F*ck",
+   "author": "Mark Manson",
+   "status": "want",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-3b54cae7f1c8.jpg",
+   "when": "",
+   "x": 0.3366389572620392,
+   "y": 0.5182524919509888
+  },
+  {
+   "id": "book-696b5912f345",
+   "title": "Adventures of Huckleberry Finn",
+   "author": "Mark Twain",
+   "status": "want",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-696b5912f345.jpg",
+   "when": "",
+   "x": 0.06019069254398346,
+   "y": 0.7675557136535645
+  },
+  {
+   "id": "book-e893582b6215",
+   "title": "A History of India",
+   "author": "Michael H. Fisher",
+   "status": "want",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-e893582b6215.jpg",
+   "when": "",
+   "x": 0.8824471831321716,
+   "y": 0.43527430295944214
+  },
+  {
+   "id": "book-aeebbf3b4c39",
+   "title": "How to Be Perfect",
+   "author": "Michael Schur",
+   "status": "want",
+   "shelf": "philosophy-mind",
+   "cover": "data/covers/book-aeebbf3b4c39.jpg",
+   "when": "",
+   "x": 0.388894647359848,
+   "y": 0.4718248248100281
+  },
+  {
+   "id": "book-6e6c2d6651e6",
+   "title": "The Picture of Dorian Gray",
+   "author": "Oscar Wilde",
+   "status": "want",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-6e6c2d6651e6.jpg",
+   "when": "",
+   "x": 0.09410056471824646,
+   "y": 0.7380982041358948
+  },
+  {
+   "id": "book-32368cb14177",
+   "title": "The Bee Sting",
+   "author": "Paul Murray",
+   "status": "want",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-32368cb14177.jpg",
+   "when": "",
+   "x": 0.14577403664588928,
+   "y": 0.8463033437728882
+  },
+  {
+   "id": "book-671fab4f7785",
+   "title": "The 48 Laws of Power",
+   "author": "Robert Greene",
+   "status": "want",
+   "shelf": "society-economics",
+   "cover": "data/covers/book-671fab4f7785.jpg",
+   "when": "",
+   "x": 0.465769499540329,
+   "y": 0.07658511400222778
+  },
+  {
+   "id": "book-4244594ab7b0",
+   "title": "What is Nationalism?",
+   "author": "Romila Thapar",
+   "status": "want",
+   "shelf": "indian-history",
+   "cover": "data/covers/book-4244594ab7b0.jpg",
+   "when": "",
+   "x": 0.9615476727485657,
+   "y": 0.5270500779151917
+  },
+  {
+   "id": "book-dc79351026ae",
+   "title": "The Gene",
+   "author": "Siddhartha Mukherjee",
+   "status": "want",
+   "shelf": "popular-science",
+   "cover": "data/covers/book-dc79351026ae.jpg",
+   "when": "",
+   "x": 0.9273362755775452,
+   "y": 0.3373306095600128
+  },
+  {
+   "id": "book-6e11f266b24d",
+   "title": "A Changed Man",
+   "author": "Thomas Hardy",
+   "status": "want",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-6e11f266b24d.jpg",
+   "when": "",
+   "x": 0.12639489769935608,
+   "y": 0.8225693106651306
+  },
+  {
+   "id": "book-4aaeea783401",
+   "title": "A History of the World in 6 Glasses",
+   "author": "Tom Standage",
+   "status": "want",
+   "shelf": "history-of-things",
+   "cover": "data/covers/book-4aaeea783401.jpg",
+   "when": "",
+   "x": 0.32861337065696716,
+   "y": 0.2842015326023102
+  },
+  {
+   "id": "book-6e28afa38b7a",
+   "title": "Lord of the Flies",
+   "author": "William Golding",
+   "status": "want",
+   "shelf": "classic-fiction",
+   "cover": "data/covers/book-6e28afa38b7a.jpg",
+   "when": "",
+   "x": 0.10705346614122391,
+   "y": 0.8813495635986328
+  },
+  {
+   "id": "book-043bafb90c51",
+   "title": "The Rise and Fall of the Third Reich",
+   "author": "William L. Shirer",
+   "status": "want",
+   "shelf": "world-history",
+   "cover": "data/covers/book-043bafb90c51.jpg",
+   "when": "",
+   "x": 0.7911089658737183,
+   "y": 0.3272581994533539
+  },
+  {
+   "id": "book-b1477a62529f",
+   "title": "The Hounding",
+   "author": "Xenobe Purvis",
+   "status": "want",
+   "shelf": "literary-fiction",
+   "cover": "data/covers/book-b1477a62529f.jpg",
+   "when": "",
+   "x": 0.17975419759750366,
+   "y": 0.9183909893035889
+  }
+ ],
+ "links": [
+  {
+   "source": "book-5775142f49a1",
+   "target": "book-243b70857e34",
+   "w": 0.534,
+   "same_author": false
+  },
+  {
+   "source": "book-5775142f49a1",
+   "target": "book-c34e51144bbc",
+   "w": 0.529,
+   "same_author": false
+  },
+  {
+   "source": "book-c34e51144bbc",
+   "target": "book-fdc0db0a96e9",
+   "w": 0.584,
+   "same_author": false
+  },
+  {
+   "source": "book-6263c35108aa",
+   "target": "book-4acaf7cb58d7",
+   "w": 0.772,
+   "same_author": true
+  },
+  {
+   "source": "book-6263c35108aa",
+   "target": "book-f58e102cd1b5",
+   "w": 0.483,
+   "same_author": true
+  },
+  {
+   "source": "book-619859680214",
+   "target": "book-3d562a4cf07e",
+   "w": 0.866,
+   "same_author": true
+  },
+  {
+   "source": "book-619859680214",
+   "target": "book-18e307f0fd38",
+   "w": 0.71,
+   "same_author": true
+  },
+  {
+   "source": "book-619859680214",
+   "target": "book-4ea32463b515",
+   "w": 0.491,
+   "same_author": false
+  },
+  {
+   "source": "book-3d562a4cf07e",
+   "target": "book-18e307f0fd38",
+   "w": 0.664,
+   "same_author": true
+  },
+  {
+   "source": "book-3d562a4cf07e",
+   "target": "book-6bb60979af83",
+   "w": 0.534,
+   "same_author": false
+  },
+  {
+   "source": "book-3d562a4cf07e",
+   "target": "book-295f6149db36",
+   "w": 0.501,
+   "same_author": false
+  },
+  {
+   "source": "book-5278319ee02b",
+   "target": "book-f4289f265cb5",
+   "w": 1.022,
+   "same_author": true
+  },
+  {
+   "source": "book-5278319ee02b",
+   "target": "book-12cd6120b92d",
+   "w": 0.941,
+   "same_author": true
+  },
+  {
+   "source": "book-5278319ee02b",
+   "target": "book-1d6905cca5c2",
+   "w": 0.808,
+   "same_author": true
+  },
+  {
+   "source": "book-a97f189b4f26",
+   "target": "book-90d87370bc7d",
+   "w": 0.461,
+   "same_author": false
+  },
+  {
+   "source": "book-54f902a86185",
+   "target": "book-8cdbc34d78fb",
+   "w": 0.393,
+   "same_author": false
+  },
+  {
+   "source": "book-54f902a86185",
+   "target": "book-c3d716943daf",
+   "w": 0.391,
+   "same_author": false
+  },
+  {
+   "source": "book-54f902a86185",
+   "target": "book-3b54cae7f1c8",
+   "w": 0.348,
+   "same_author": false
+  },
+  {
+   "source": "book-2c6b1e5884e9",
+   "target": "book-c2785629138e",
+   "w": 0.714,
+   "same_author": true
+  },
+  {
+   "source": "book-2c6b1e5884e9",
+   "target": "book-83858f1fea6a",
+   "w": 0.643,
+   "same_author": true
+  },
+  {
+   "source": "book-59ee2e54bb65",
+   "target": "book-5a6ce5871b32",
+   "w": 0.507,
+   "same_author": false
+  },
+  {
+   "source": "book-59ee2e54bb65",
+   "target": "book-64d26d20b4ea",
+   "w": 0.41,
+   "same_author": false
+  },
+  {
+   "source": "book-f58e102cd1b5",
+   "target": "book-4acaf7cb58d7",
+   "w": 0.67,
+   "same_author": true
+  },
+  {
+   "source": "book-1d6905cca5c2",
+   "target": "book-f4289f265cb5",
+   "w": 0.918,
+   "same_author": true
+  },
+  {
+   "source": "book-1d6905cca5c2",
+   "target": "book-12cd6120b92d",
+   "w": 0.829,
+   "same_author": true
+  },
+  {
+   "source": "book-f4289f265cb5",
+   "target": "book-12cd6120b92d",
+   "w": 1.033,
+   "same_author": true
+  },
+  {
+   "source": "book-18e307f0fd38",
+   "target": "book-4ea32463b515",
+   "w": 0.594,
+   "same_author": false
+  },
+  {
+   "source": "book-18e307f0fd38",
+   "target": "book-4e36acef6180",
+   "w": 0.469,
+   "same_author": false
+  },
+  {
+   "source": "book-42e4ab7b84fe",
+   "target": "book-90e1bc4d641f",
+   "w": 0.572,
+   "same_author": false
+  },
+  {
+   "source": "book-42e4ab7b84fe",
+   "target": "book-ddd648fe08ab",
+   "w": 0.562,
+   "same_author": false
+  },
+  {
+   "source": "book-42e4ab7b84fe",
+   "target": "book-a3d277f759f9",
+   "w": 0.536,
+   "same_author": false
+  },
+  {
+   "source": "book-4c12a8b56b06",
+   "target": "book-fc32d537509d",
+   "w": 0.471,
+   "same_author": false
+  },
+  {
+   "source": "book-5545e9ae94fc",
+   "target": "book-31f28b4a9ab1",
+   "w": 0.451,
+   "same_author": false
+  },
+  {
+   "source": "book-12cd6120b92d",
+   "target": "book-e893582b6215",
+   "w": 0.763,
+   "same_author": false
+  },
+  {
+   "source": "book-64d26d20b4ea",
+   "target": "book-eae60a9c54f4",
+   "w": 0.49,
+   "same_author": false
+  },
+  {
+   "source": "book-863a20c8c3f7",
+   "target": "book-2022fcf2fe4a",
+   "w": 0.605,
+   "same_author": false
+  },
+  {
+   "source": "book-863a20c8c3f7",
+   "target": "book-c3d716943daf",
+   "w": 0.598,
+   "same_author": true
+  },
+  {
+   "source": "book-863a20c8c3f7",
+   "target": "book-7acc86693a0b",
+   "w": 0.588,
+   "same_author": false
+  },
+  {
+   "source": "book-863a20c8c3f7",
+   "target": "book-18f3fb91eea1",
+   "w": 0.513,
+   "same_author": false
+  },
+  {
+   "source": "book-2022fcf2fe4a",
+   "target": "book-7acc86693a0b",
+   "w": 0.669,
+   "same_author": false
+  },
+  {
+   "source": "book-2022fcf2fe4a",
+   "target": "book-18f3fb91eea1",
+   "w": 0.619,
+   "same_author": false
+  },
+  {
+   "source": "book-49ef0a950904",
+   "target": "book-c2785629138e",
+   "w": 0.734,
+   "same_author": true
+  },
+  {
+   "source": "book-49ef0a950904",
+   "target": "book-b7d17e7b8555",
+   "w": 0.695,
+   "same_author": true
+  },
+  {
+   "source": "book-994663092753",
+   "target": "book-d547e2799d7e",
+   "w": 0.546,
+   "same_author": false
+  },
+  {
+   "source": "book-994663092753",
+   "target": "book-80d27e4a25a2",
+   "w": 0.507,
+   "same_author": false
+  },
+  {
+   "source": "book-994663092753",
+   "target": "book-52cdbb42ba21",
+   "w": 0.466,
+   "same_author": false
+  },
+  {
+   "source": "book-676a592cdef9",
+   "target": "book-7acc86693a0b",
+   "w": 0.658,
+   "same_author": true
+  },
+  {
+   "source": "book-676a592cdef9",
+   "target": "book-09969467beb5",
+   "w": 0.596,
+   "same_author": false
+  },
+  {
+   "source": "book-7acc86693a0b",
+   "target": "book-18f3fb91eea1",
+   "w": 0.597,
+   "same_author": false
+  },
+  {
+   "source": "book-eae60a9c54f4",
+   "target": "book-4ea32463b515",
+   "w": 0.493,
+   "same_author": false
+  },
+  {
+   "source": "book-eae60a9c54f4",
+   "target": "book-5ebbcac0cbef",
+   "w": 0.492,
+   "same_author": false
+  },
+  {
+   "source": "book-db66347b4843",
+   "target": "book-4d0025614229",
+   "w": 0.533,
+   "same_author": false
+  },
+  {
+   "source": "book-db66347b4843",
+   "target": "book-f0cf08957acc",
+   "w": 0.466,
+   "same_author": false
+  },
+  {
+   "source": "book-b7d17e7b8555",
+   "target": "book-b2b6148b2e13",
+   "w": 0.663,
+   "same_author": true
+  },
+  {
+   "source": "book-b7d17e7b8555",
+   "target": "book-c2785629138e",
+   "w": 0.655,
+   "same_author": true
+  },
+  {
+   "source": "book-c3d716943daf",
+   "target": "book-7255cf51e521",
+   "w": 0.722,
+   "same_author": false
+  },
+  {
+   "source": "book-c3d716943daf",
+   "target": "book-3507c25733d8",
+   "w": 0.658,
+   "same_author": false
+  },
+  {
+   "source": "book-3507c25733d8",
+   "target": "book-7255cf51e521",
+   "w": 0.563,
+   "same_author": false
+  },
+  {
+   "source": "book-d547e2799d7e",
+   "target": "book-80d27e4a25a2",
+   "w": 0.507,
+   "same_author": false
+  },
+  {
+   "source": "book-405830734957",
+   "target": "book-a3d277f759f9",
+   "w": 0.955,
+   "same_author": true
+  },
+  {
+   "source": "book-405830734957",
+   "target": "book-af598f5562f2",
+   "w": 0.912,
+   "same_author": true
+  },
+  {
+   "source": "book-405830734957",
+   "target": "book-e0dac0be5921",
+   "w": 0.89,
+   "same_author": true
+  },
+  {
+   "source": "book-e0dac0be5921",
+   "target": "book-a3d277f759f9",
+   "w": 0.952,
+   "same_author": true
+  },
+  {
+   "source": "book-e0dac0be5921",
+   "target": "book-af598f5562f2",
+   "w": 0.897,
+   "same_author": true
+  },
+  {
+   "source": "book-e0dac0be5921",
+   "target": "book-a5ad8b76cc3f",
+   "w": 0.504,
+   "same_author": false
+  },
+  {
+   "source": "book-a3d277f759f9",
+   "target": "book-af598f5562f2",
+   "w": 0.909,
+   "same_author": true
+  },
+  {
+   "source": "book-6db19503067d",
+   "target": "book-dc79351026ae",
+   "w": 0.752,
+   "same_author": true
+  },
+  {
+   "source": "book-a3d640ec9a34",
+   "target": "book-85bc18b85b83",
+   "w": 0.968,
+   "same_author": true
+  },
+  {
+   "source": "book-a3d640ec9a34",
+   "target": "book-ee34a6c50dbf",
+   "w": 0.582,
+   "same_author": false
+  },
+  {
+   "source": "book-a3d640ec9a34",
+   "target": "book-de8ae851971a",
+   "w": 0.573,
+   "same_author": false
+  },
+  {
+   "source": "book-fef328509ffe",
+   "target": "book-504fd0809785",
+   "w": 0.855,
+   "same_author": true
+  },
+  {
+   "source": "book-fef328509ffe",
+   "target": "book-e4e523f65cdd",
+   "w": 0.824,
+   "same_author": true
+  },
+  {
+   "source": "book-fef328509ffe",
+   "target": "book-7e68188da266",
+   "w": 0.737,
+   "same_author": true
+  },
+  {
+   "source": "book-fef328509ffe",
+   "target": "book-964e6ed21653",
+   "w": 0.63,
+   "same_author": true
+  },
+  {
+   "source": "book-964e6ed21653",
+   "target": "book-504fd0809785",
+   "w": 0.814,
+   "same_author": true
+  },
+  {
+   "source": "book-964e6ed21653",
+   "target": "book-e4e523f65cdd",
+   "w": 0.72,
+   "same_author": true
+  },
+  {
+   "source": "book-964e6ed21653",
+   "target": "book-7e68188da266",
+   "w": 0.655,
+   "same_author": true
+  },
+  {
+   "source": "book-504fd0809785",
+   "target": "book-e4e523f65cdd",
+   "w": 0.903,
+   "same_author": true
+  },
+  {
+   "source": "book-504fd0809785",
+   "target": "book-7e68188da266",
+   "w": 0.856,
+   "same_author": true
+  },
+  {
+   "source": "book-85bc18b85b83",
+   "target": "book-ee34a6c50dbf",
+   "w": 0.505,
+   "same_author": false
+  },
+  {
+   "source": "book-7e68188da266",
+   "target": "book-e4e523f65cdd",
+   "w": 0.709,
+   "same_author": true
+  },
+  {
+   "source": "book-f0cf08957acc",
+   "target": "book-4d0025614229",
+   "w": 0.801,
+   "same_author": false
+  },
+  {
+   "source": "book-f0cf08957acc",
+   "target": "book-3a1e2eb24e74",
+   "w": 0.65,
+   "same_author": false
+  },
+  {
+   "source": "book-f0cf08957acc",
+   "target": "book-5482b545e069",
+   "w": 0.475,
+   "same_author": false
+  },
+  {
+   "source": "book-a30e36a7335f",
+   "target": "book-043bafb90c51",
+   "w": 0.414,
+   "same_author": false
+  },
+  {
+   "source": "book-bd0a620df688",
+   "target": "book-6bb60979af83",
+   "w": 0.725,
+   "same_author": true
+  },
+  {
+   "source": "book-4d0025614229",
+   "target": "book-3a1e2eb24e74",
+   "w": 0.596,
+   "same_author": false
+  },
+  {
+   "source": "book-4d0025614229",
+   "target": "book-5482b545e069",
+   "w": 0.5,
+   "same_author": false
+  },
+  {
+   "source": "book-90d87370bc7d",
+   "target": "book-5ebbcac0cbef",
+   "w": 0.58,
+   "same_author": true
+  },
+  {
+   "source": "book-90d87370bc7d",
+   "target": "book-0a554f6d4509",
+   "w": 0.492,
+   "same_author": true
+  },
+  {
+   "source": "book-da7b6207567c",
+   "target": "book-3a1e2eb24e74",
+   "w": 0.973,
+   "same_author": true
+  },
+  {
+   "source": "book-da7b6207567c",
+   "target": "book-d6f057a939be",
+   "w": 0.692,
+   "same_author": true
+  },
+  {
+   "source": "book-6bb60979af83",
+   "target": "book-754677c0cfba",
+   "w": 0.485,
+   "same_author": false
+  },
+  {
+   "source": "book-243b70857e34",
+   "target": "book-aa9d8baf7d95",
+   "w": 0.421,
+   "same_author": false
+  },
+  {
+   "source": "book-da1b68b6ce16",
+   "target": "book-0bb0c676bc3a",
+   "w": 0.841,
+   "same_author": false
+  },
+  {
+   "source": "book-da1b68b6ce16",
+   "target": "book-11e1423f5377",
+   "w": 0.817,
+   "same_author": true
+  },
+  {
+   "source": "book-da1b68b6ce16",
+   "target": "book-a9ed2e56233a",
+   "w": 0.814,
+   "same_author": false
+  },
+  {
+   "source": "book-da1b68b6ce16",
+   "target": "book-e893582b6215",
+   "w": 0.714,
+   "same_author": false
+  },
+  {
+   "source": "book-075e3cb44b10",
+   "target": "book-c327f65031b2",
+   "w": 0.596,
+   "same_author": true
+  },
+  {
+   "source": "book-f151d9d023e9",
+   "target": "book-90e1bc4d641f",
+   "w": 0.984,
+   "same_author": true
+  },
+  {
+   "source": "book-f151d9d023e9",
+   "target": "book-0bdca90b114c",
+   "w": 0.867,
+   "same_author": true
+  },
+  {
+   "source": "book-f151d9d023e9",
+   "target": "book-ddd648fe08ab",
+   "w": 0.846,
+   "same_author": true
+  },
+  {
+   "source": "book-90e1bc4d641f",
+   "target": "book-ddd648fe08ab",
+   "w": 0.92,
+   "same_author": true
+  },
+  {
+   "source": "book-90e1bc4d641f",
+   "target": "book-0bdca90b114c",
+   "w": 0.823,
+   "same_author": true
+  },
+  {
+   "source": "book-ddd648fe08ab",
+   "target": "book-0bdca90b114c",
+   "w": 0.783,
+   "same_author": true
+  },
+  {
+   "source": "book-4e36acef6180",
+   "target": "book-043bafb90c51",
+   "w": 0.484,
+   "same_author": false
+  },
+  {
+   "source": "book-0bb0c676bc3a",
+   "target": "book-a9ed2e56233a",
+   "w": 0.794,
+   "same_author": false
+  },
+  {
+   "source": "book-295f6149db36",
+   "target": "book-5ebbcac0cbef",
+   "w": 0.519,
+   "same_author": false
+  },
+  {
+   "source": "book-295f6149db36",
+   "target": "book-6a9f846f557d",
+   "w": 0.495,
+   "same_author": false
+  },
+  {
+   "source": "book-b79d6089f9ac",
+   "target": "book-696b5912f345",
+   "w": 0.659,
+   "same_author": false
+  },
+  {
+   "source": "book-23df18d1f189",
+   "target": "book-52cdbb42ba21",
+   "w": 0.45,
+   "same_author": false
+  },
+  {
+   "source": "book-7765a8c4bae8",
+   "target": "book-01400d0dbee7",
+   "w": 0.679,
+   "same_author": true
+  },
+  {
+   "source": "book-7765a8c4bae8",
+   "target": "book-7ce9a224a032",
+   "w": 0.667,
+   "same_author": true
+  },
+  {
+   "source": "book-7765a8c4bae8",
+   "target": "book-ef5444c609c5",
+   "w": 0.581,
+   "same_author": true
+  },
+  {
+   "source": "book-7ce9a224a032",
+   "target": "book-01400d0dbee7",
+   "w": 0.678,
+   "same_author": true
+  },
+  {
+   "source": "book-7ce9a224a032",
+   "target": "book-ef5444c609c5",
+   "w": 0.612,
+   "same_author": true
+  },
+  {
+   "source": "book-83858f1fea6a",
+   "target": "book-c2785629138e",
+   "w": 0.719,
+   "same_author": true
+  },
+  {
+   "source": "book-83858f1fea6a",
+   "target": "book-b2b6148b2e13",
+   "w": 0.648,
+   "same_author": true
+  },
+  {
+   "source": "book-ef5444c609c5",
+   "target": "book-01400d0dbee7",
+   "w": 0.66,
+   "same_author": true
+  },
+  {
+   "source": "book-2ba79064fda6",
+   "target": "book-fdc0db0a96e9",
+   "w": 0.633,
+   "same_author": false
+  },
+  {
+   "source": "book-2ba79064fda6",
+   "target": "book-6e28afa38b7a",
+   "w": 0.579,
+   "same_author": false
+  },
+  {
+   "source": "book-2ba79064fda6",
+   "target": "book-6e6c2d6651e6",
+   "w": 0.56,
+   "same_author": false
+  },
+  {
+   "source": "book-2ba79064fda6",
+   "target": "book-147cfd969b28",
+   "w": 0.548,
+   "same_author": false
+  },
+  {
+   "source": "book-aa9d8baf7d95",
+   "target": "book-671fab4f7785",
+   "w": 0.456,
+   "same_author": true
+  },
+  {
+   "source": "book-fdc0db0a96e9",
+   "target": "book-696b5912f345",
+   "w": 0.723,
+   "same_author": false
+  },
+  {
+   "source": "book-fdc0db0a96e9",
+   "target": "book-6e28afa38b7a",
+   "w": 0.659,
+   "same_author": false
+  },
+  {
+   "source": "book-5a6ce5871b32",
+   "target": "book-6a9f846f557d",
+   "w": 0.569,
+   "same_author": false
+  },
+  {
+   "source": "book-a5ad8b76cc3f",
+   "target": "book-e755c669d849",
+   "w": 0.485,
+   "same_author": false
+  },
+  {
+   "source": "book-eabb2631d7fc",
+   "target": "book-f039ea50fbb9",
+   "w": 0.598,
+   "same_author": true
+  },
+  {
+   "source": "book-eabb2631d7fc",
+   "target": "book-8cdbc34d78fb",
+   "w": 0.396,
+   "same_author": false
+  },
+  {
+   "source": "book-3a1e2eb24e74",
+   "target": "book-d6f057a939be",
+   "w": 0.676,
+   "same_author": true
+  },
+  {
+   "source": "book-0a554f6d4509",
+   "target": "book-754677c0cfba",
+   "w": 0.485,
+   "same_author": true
+  },
+  {
+   "source": "book-5ebbcac0cbef",
+   "target": "book-754677c0cfba",
+   "w": 0.803,
+   "same_author": true
+  },
+  {
+   "source": "book-754677c0cfba",
+   "target": "book-6a9f846f557d",
+   "w": 0.476,
+   "same_author": false
+  },
+  {
+   "source": "book-31f28b4a9ab1",
+   "target": "book-d8e02989e437",
+   "w": 0.441,
+   "same_author": false
+  },
+  {
+   "source": "book-e755c669d849",
+   "target": "book-0bdca90b114c",
+   "w": 0.521,
+   "same_author": false
+  },
+  {
+   "source": "book-147cfd969b28",
+   "target": "book-6e28afa38b7a",
+   "w": 0.61,
+   "same_author": false
+  },
+  {
+   "source": "book-147cfd969b28",
+   "target": "book-696b5912f345",
+   "w": 0.597,
+   "same_author": false
+  },
+  {
+   "source": "book-ee34a6c50dbf",
+   "target": "book-de8ae851971a",
+   "w": 1.014,
+   "same_author": true
+  },
+  {
+   "source": "book-a9ed2e56233a",
+   "target": "book-e893582b6215",
+   "w": 0.838,
+   "same_author": false
+  },
+  {
+   "source": "book-d8e02989e437",
+   "target": "book-758a11bc03b9",
+   "w": 0.459,
+   "same_author": false
+  },
+  {
+   "source": "book-490b2c3cec51",
+   "target": "book-043bafb90c51",
+   "w": 0.494,
+   "same_author": false
+  },
+  {
+   "source": "book-696b5912f345",
+   "target": "book-6e28afa38b7a",
+   "w": 0.631,
+   "same_author": false
+  },
+  {
+   "source": "book-5775142f49a1",
+   "target": "book-147cfd969b28",
+   "w": 0.544,
+   "same_author": false
+  },
+  {
+   "source": "book-eb72308f184c",
+   "target": "book-6e28afa38b7a",
+   "w": 0.394,
+   "same_author": false
+  },
+  {
+   "source": "book-7962cbb2f2c0",
+   "target": "book-da1b68b6ce16",
+   "w": 0.544,
+   "same_author": false
+  },
+  {
+   "source": "book-58d3b27c1d4c",
+   "target": "book-feae8fa34f29",
+   "w": 0.38,
+   "same_author": false
+  },
+  {
+   "source": "book-71660c3aa38e",
+   "target": "book-f4289f265cb5",
+   "w": 0.527,
+   "same_author": false
+  },
+  {
+   "source": "book-5545e9ae94fc",
+   "target": "book-696b5912f345",
+   "w": 0.477,
+   "same_author": false
+  },
+  {
+   "source": "book-18e307f0fd38",
+   "target": "book-4700b44215f3",
+   "w": 0.412,
+   "same_author": false
+  },
+  {
+   "source": "book-23cd6f14beb3",
+   "target": "book-863a20c8c3f7",
+   "w": 0.381,
+   "same_author": false
+  },
+  {
+   "source": "book-863a20c8c3f7",
+   "target": "book-14c4077610e5",
+   "w": 0.437,
+   "same_author": false
+  },
+  {
+   "source": "book-d448531fb97d",
+   "target": "book-e893582b6215",
+   "w": 0.658,
+   "same_author": false
+  },
+  {
+   "source": "book-b7d17e7b8555",
+   "target": "book-a30e36a7335f",
+   "w": 0.455,
+   "same_author": false
+  },
+  {
+   "source": "book-f4289f265cb5",
+   "target": "book-74f9a167a5c3",
+   "w": 0.707,
+   "same_author": false
+  },
+  {
+   "source": "book-3d562a4cf07e",
+   "target": "book-7c4fb06a0060",
+   "w": 0.453,
+   "same_author": false
+  },
+  {
+   "source": "book-f4289f265cb5",
+   "target": "book-4e36acef6180",
+   "w": 0.489,
+   "same_author": false
+  },
+  {
+   "source": "book-5278319ee02b",
+   "target": "book-23df18d1f189",
+   "w": 0.456,
+   "same_author": false
+  },
+  {
+   "source": "book-7962cbb2f2c0",
+   "target": "book-feae8fa34f29",
+   "w": 0.465,
+   "same_author": false
+  },
+  {
+   "source": "book-5775142f49a1",
+   "target": "book-aa9d8baf7d95",
+   "w": 0.489,
+   "same_author": false
+  },
+  {
+   "source": "book-fdc0db0a96e9",
+   "target": "book-76ef59a89b06",
+   "w": 0.499,
+   "same_author": false
+  },
+  {
+   "source": "book-83858f1fea6a",
+   "target": "book-7c26a0cd9631",
+   "w": 0.544,
+   "same_author": false
+  },
+  {
+   "source": "book-f4289f265cb5",
+   "target": "book-52cdbb42ba21",
+   "w": 0.481,
+   "same_author": false
+  },
+  {
+   "source": "book-2ba79064fda6",
+   "target": "book-a0295466d270",
+   "w": 0.474,
+   "same_author": false
+  },
+  {
+   "source": "book-c2785629138e",
+   "target": "book-80d27e4a25a2",
+   "w": 0.578,
+   "same_author": false
+  },
+  {
+   "source": "book-80d27e4a25a2",
+   "target": "book-6a088b2c4d19",
+   "w": 0.466,
+   "same_author": false
+  },
+  {
+   "source": "book-a3d277f759f9",
+   "target": "book-604b027918b2",
+   "w": 0.47,
+   "same_author": false
+  },
+  {
+   "source": "book-3507c25733d8",
+   "target": "book-3bf529e22108",
+   "w": 0.387,
+   "same_author": false
+  },
+  {
+   "source": "book-31f28b4a9ab1",
+   "target": "book-696b5912f345",
+   "w": 0.479,
+   "same_author": false
+  },
+  {
+   "source": "book-b2b6148b2e13",
+   "target": "book-98d4862bea74",
+   "w": 0.437,
+   "same_author": false
+  },
+  {
+   "source": "book-21e684d8be13",
+   "target": "book-aeebbf3b4c39",
+   "w": 0.289,
+   "same_author": false
+  },
+  {
+   "source": "book-e755c669d849",
+   "target": "book-147cfd969b28",
+   "w": 0.531,
+   "same_author": false
+  },
+  {
+   "source": "book-42e4ab7b84fe",
+   "target": "book-0ca4746f4e38",
+   "w": 0.403,
+   "same_author": false
+  },
+  {
+   "source": "book-64d26d20b4ea",
+   "target": "book-3b54cae7f1c8",
+   "w": 0.402,
+   "same_author": false
+  },
+  {
+   "source": "book-7e68188da266",
+   "target": "book-aeebbf3b4c39",
+   "w": 0.378,
+   "same_author": false
+  },
+  {
+   "source": "book-fdc0db0a96e9",
+   "target": "book-32368cb14177",
+   "w": 0.451,
+   "same_author": false
+  },
+  {
+   "source": "book-12cd6120b92d",
+   "target": "book-4244594ab7b0",
+   "w": 0.621,
+   "same_author": false
+  },
+  {
+   "source": "book-6e6c2d6651e6",
+   "target": "book-6e11f266b24d",
+   "w": 0.504,
+   "same_author": false
+  },
+  {
+   "source": "book-863a20c8c3f7",
+   "target": "book-4aaeea783401",
+   "w": 0.401,
+   "same_author": false
+  },
+  {
+   "source": "book-7765a8c4bae8",
+   "target": "book-b1477a62529f",
+   "w": 0.451,
+   "same_author": false
+  },
+  {
+   "source": "book-2c6b1e5884e9",
+   "target": "book-49ef0a950904",
+   "w": 0.578,
+   "same_author": true
+  },
+  {
+   "source": "book-2c6b1e5884e9",
+   "target": "book-b7d17e7b8555",
+   "w": 0.517,
+   "same_author": true
+  },
+  {
+   "source": "book-2c6b1e5884e9",
+   "target": "book-b2b6148b2e13",
+   "w": 0.516,
+   "same_author": true
+  },
+  {
+   "source": "book-49ef0a950904",
+   "target": "book-83858f1fea6a",
+   "w": 0.635,
+   "same_author": true
+  },
+  {
+   "source": "book-49ef0a950904",
+   "target": "book-b2b6148b2e13",
+   "w": 0.536,
+   "same_author": true
+  },
+  {
+   "source": "book-b7d17e7b8555",
+   "target": "book-83858f1fea6a",
+   "w": 0.501,
+   "same_author": true
+  },
+  {
+   "source": "book-f0cf08957acc",
+   "target": "book-a30e36a7335f",
+   "w": 0.425,
+   "same_author": true
+  },
+  {
+   "source": "book-90d87370bc7d",
+   "target": "book-754677c0cfba",
+   "w": 0.443,
+   "same_author": true
+  },
+  {
+   "source": "book-b2b6148b2e13",
+   "target": "book-c2785629138e",
+   "w": 0.614,
+   "same_author": true
+  },
+  {
+   "source": "book-0a554f6d4509",
+   "target": "book-5ebbcac0cbef",
+   "w": 0.475,
+   "same_author": true
+  }
+ ]
+}
