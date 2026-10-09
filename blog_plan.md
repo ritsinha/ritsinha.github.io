@@ -85,7 +85,7 @@ Post body goes here...
 
 ### College earnings are useful, but not a college ranking
 
-**Status:** draft | **Source:** [`blog/posts/2026-10-09-college-earnings-data.md`](blog/posts/2026-10-09-college-earnings-data.md)
+**Status:** published | **Source:** [`blog/posts/2026-10-09-college-earnings-data.md`](blog/posts/2026-10-09-college-earnings-data.md)
 
 The source draft covers the interpretive question, the HEA Group data definition, the role of cohort size, and the distinction between observed outcomes and causal claims. It deliberately excludes a private college shortlist and any individual application choices.
 

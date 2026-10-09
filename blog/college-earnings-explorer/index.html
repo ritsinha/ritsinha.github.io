@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>College Earnings Explorer</title>
+<meta name="description" content="Explore reported earnings four years after college completion across 32,578 undergraduate programs.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><span class="brandmark" aria-hidden="true">CE</span><span>College earnings <small>EXPLORER</small></span></div><button id="about">About the data</button></header>
+<div class="workspace">
+<aside aria-label="Filter programs">
+<h2>Explore programs</h2><p class="aside-intro">Filter reported programs, then compare their observed earnings outcomes.</p>
+<div class="filters">
+<label class="major-label">Major<select id="major" disabled><option>Loading majors…</option></select></label>
+<div class="quick" aria-label="Quick major selection"><button data-major="4510" class="active">Political science</button><button data-major="5401">History</button><button data-major="4506">Economics</button><button data-major="2701">Mathematics</button><button data-major="2705">Statistics</button></div>
+<label>College name<input id="search" type="search" placeholder="Search any college" autocomplete="off"></label>
+<label>State<select id="state"><option value="">All states</option></select></label>
+<label>Degree<select id="degree"><option value="Bachelor">Bachelor’s</option><option value="Associate">Associate</option><option value="">Both degrees</option></select></label>
+<label>Minimum cohort<select id="cohort"><option value="0">Any reported size</option><option value="25">At least 25 graduates</option><option value="50">At least 50 graduates</option><option value="100">At least 100 graduates</option></select></label>
+</div>
+<button id="reset" class="reset">Reset filters</button>
+<div class="source-note"><span>DATA SNAPSHOT</span><p>Federal earnings data<br>HEA Group · January 2026</p><small>Reportable programs only. A missing college or major does not mean it isn’t offered.</small></div>
+</aside>
+<main>
+<div class="title-row"><div><p class="eyebrow">FOUR YEARS AFTER COMPLETION</p><h1 id="heading">Political science</h1><p id="subheading">Bachelor’s programs across the United States</p></div><button id="download" class="download" disabled>Download CSV</button></div>
+<div class="stats" aria-live="polite"><div><span>Programs in view</span><strong id="count">—</strong></div><div><span>Median of program medians</span><strong id="median">—</strong></div><div><span>Program earnings range</span><strong id="range">—</strong></div></div>
+<p class="context">Median annual earnings of federal-aid recipients who were working and not enrolled in college. <button class="text-button" id="learn">How to read these numbers</button></p>
+<section class="results" aria-label="College program results">
+<div class="table-toolbar"><div><h2>College comparison</h2><span id="result-label" aria-live="polite">Loading the complete dataset…</span></div><label class="sort-label">Sort by<select id="sort"><option value="earn-desc">Highest earnings</option><option value="earn-asc">Lowest earnings</option><option value="name">College name</option><option value="cohort">Largest cohort</option><option value="premium">Largest gap vs. HS</option></select></label></div>
+<div class="table-scroll"><table><thead><tr><th class="select-col"><span class="sr-only">Compare</span></th><th>College / program</th><th class="number">Median earnings</th><th class="number optional">Gap vs. HS benchmark</th></tr></thead><tbody id="rows"><tr><td colspan="4" class="empty">Loading earnings data…</td></tr></tbody></table></div>
+<div class="pagination"><span id="page-label"></span><div><button id="prev" disabled>Previous</button><button id="next" disabled>Next</button></div></div>
+</section>
+<p class="footnote">Graduates completed their programs in 2017-18 or 2018-19. Earnings were measured in 2022 and 2023 and adjusted to 2024 dollars. College comparisons describe outcomes; they do not isolate a college’s effect on earnings.</p>
+</main></div>
+<div id="compare-tray" class="compare-tray" hidden><span id="compare-count"></span><div><button id="clear-compare">Clear</button><button id="show-compare" class="primary">Compare programs</button></div></div>
+<dialog id="about-dialog"><div class="dialog-head"><h2>About the data</h2><button data-close="about-dialog" aria-label="Close data explanation">Close</button></div><div class="dialog-body">
+<p>This explorer uses the HEA Group’s national undergraduate earnings dataset, published January 5, 2026. It contains <strong>32,578 reported associate and bachelor’s programs</strong>, including <strong>539 bachelor’s political science programs</strong>.</p>
+<h3>What earnings represent</h3><p>Each figure is a program’s median annual earnings four years after completion. The source pools 2017-18 and 2018-19 completers, measures earnings in calendar years 2022 and 2023, and adjusts them to 2024 dollars using CPI-U.</p>
+<p>The cohort includes Title IV federal-aid recipients who were working and not enrolled in college four years after leaving the program. It excludes graduates outside that definition, including those still in graduate school. Cohort is the number of completers in the earnings cohort.</p>
+<h3>How to compare</h3><p>Small cohorts can be less representative. Use the minimum-cohort filter to focus on larger groups. The summary’s “median of program medians” gives each reported program equal weight; it is not a national median for individual graduates.</p>
+<p>The high-school benchmark is the benchmark assigned to that program in the source, either the same-state or national median. “Gap vs. HS” subtracts this benchmark from the program median. The benchmark basis can differ across colleges.</p>
+<h3>Coverage and provenance</h3><p>This includes every record in the HEA undergraduate file. Programs with no reported earnings are absent. Majors use four-digit CIP categories, which can combine more specific programs. The HEA Group identifies its earnings data as the source for the Times guide.</p>
+<div class="source-links"><a href="https://www.theheagroup.com/blog/earnings-test-data" target="_blank" rel="noopener">HEA report and methodology</a><a href="https://www.nytimes.com/interactive/2026/10/07/your-money/college-degree-earnings-guide.html" target="_blank" rel="noopener">New York Times guide</a></div>
+</div></dialog>
+<dialog id="compare-dialog" class="comparison-dialog"><div class="dialog-head"><div><p class="eyebrow">SIDE BY SIDE</p><h2>Selected programs</h2></div><button data-close="compare-dialog">Close</button></div><div id="comparison" class="comparison-grid"></div><p class="comparison-note">Each figure is a program median, four years after completion, in 2024 dollars. Cohorts and high-school benchmark definitions can differ.</p></dialog>
+<div id="toast" role="status" hidden></div>
+<script src="app.js" defer></script>
+</body></html>
