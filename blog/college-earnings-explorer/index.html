@@ -12,9 +12,21 @@
 <aside aria-label="Filter programs">
 <h2>Explore programs</h2><p class="aside-intro">Filter reported programs, then compare their observed earnings outcomes.</p>
 <div class="filters">
-<label class="major-label">Major<select id="major" disabled><option>Loading majors…</option></select></label>
+<div class="multi-filter major-filter">
+  <label for="major-search">Major</label>
+  <div class="multi-select" data-kind="major">
+    <div class="multi-control"><div class="multi-chips" id="major-chips"></div><input id="major-search" type="search" placeholder="Search majors" autocomplete="off" aria-expanded="false" aria-controls="major-options"><button class="multi-toggle" type="button" aria-label="Show major options">⌄</button></div>
+    <div class="multi-options" id="major-options" role="listbox" aria-label="Major options" hidden></div>
+  </div>
+</div>
 <div class="quick" aria-label="Quick major selection"><button data-major="4510" class="active">Political science</button><button data-major="5401">History</button><button data-major="4506">Economics</button><button data-major="2701">Mathematics</button><button data-major="2705">Statistics</button></div>
-<label>College name<input id="search" type="search" placeholder="Search any college" autocomplete="off"></label>
+<div class="multi-filter college-filter">
+  <label for="college-search">College</label>
+  <div class="multi-select" data-kind="college">
+    <div class="multi-control"><div class="multi-chips" id="college-chips"></div><input id="college-search" type="search" placeholder="Search colleges" autocomplete="off" aria-expanded="false" aria-controls="college-options"><button class="multi-toggle" type="button" aria-label="Show college options">⌄</button></div>
+    <div class="multi-options" id="college-options" role="listbox" aria-label="College options" hidden></div>
+  </div>
+</div>
 <label>State<select id="state"><option value="">All states</option></select></label>
 <label>Degree<select id="degree"><option value="Bachelor">Bachelor’s</option><option value="Associate">Associate</option><option value="">Both degrees</option></select></label>
 <label>Minimum cohort<select id="cohort"><option value="0">Any reported size</option><option value="25">At least 25 graduates</option><option value="50">At least 50 graduates</option><option value="100">At least 100 graduates</option></select></label>
