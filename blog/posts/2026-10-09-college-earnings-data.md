@@ -9,10 +9,8 @@ This year, my older son is applying to colleges. As anyone who has been through 
 
 Today, I came across one more data point. The [New York Times college-degree earnings guide](https://www.nytimes.com/interactive/2026/10/07/your-money/college-degree-earnings-guide.html) describes recent data on what a college graduate's annual income might be four years after graduation. As you might know, I like looking at all kinds of data, and this was a great excuse to pore over data around a question in which I am clearly invested.
 
-Below is a simple tool that lets you see the reported median income for students at different universities and in different majors.
+I built a small tool around it: pick a major (or several), search for a college, filter by state, degree, or cohort size, and see reported median earnings across 32,578 undergraduate programs, 539 of them in political science alone. It is a table more than a chart on purpose. Once you start narrowing by major and college at the same time, a table is just easier to read than almost anything fancier.
 
-<div style="width:100%; height:760px; margin:2rem 0; border:1px solid #dce3e6; border-radius:6px; overflow:hidden;">
-  <iframe src="college-earnings-explorer/" width="100%" height="760" style="border:none;" title="College Earnings Explorer"></iframe>
-</div>
+**[Open the College Earnings Explorer →](college-earnings-explorer/)**
 
 *Ritwik Sinha — Cupertino, CA*

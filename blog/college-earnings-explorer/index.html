@@ -5,9 +5,46 @@
 <title>College Earnings Explorer</title>
 <meta name="description" content="Explore reported earnings four years after college completion across 32,578 undergraduate programs.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../style.css">
+<style>
+  /* blog theme overrides: match the site nav, footer, and navy/blue palette (same
+     treatment as blog/reading-list/) so this reads as part of the site, not a separate app. */
+  :root { --blue:#2563eb; --muted:#6b7280; --border:#e5e7eb; --navy:#1e3a5f; }
+  body { font-family:"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  nav { margin-bottom:0; } body > footer { margin-top:0; padding:20px 36px; border-top:1px solid #e5e7eb; }
+
+  /* reclaim layout/typography the site stylesheet's generic main/h2 rules would otherwise win
+     on source order (both files target bare `main`/`h2`); keep the explorer's own measurements */
+  .workspace main { max-width:none; margin:0; }
+  aside h2, .table-toolbar h2, dialog h2 { border-bottom:0; padding-bottom:0; }
+  aside h2 { font-size:1rem; margin:0 0 8px; color:inherit; }
+  .table-toolbar h2 { font-size:1rem; margin-bottom:6px; color:inherit; }
+
+  .title-row { flex-wrap:wrap; }
+  .title-actions { display:flex; gap:10px; }
+  .about-link { background:transparent; }
+
+  /* re-point hardcoded colors left over from the explorer's own palette onto the site's */
+  .quick .active { background:var(--accent,#dbeafe); border-color:#bfdbfe; color:var(--blue); }
+  .earnings { color:var(--blue); }
+  .earnings .bar span, .compare-card .bar span { background:var(--blue); }
+  button:hover { background:var(--accent,#dbeafe); border-color:#bfdbfe; }
+  .primary:hover { background:#1d4ed8; }
+  button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline-color:#93c5fd; }
+
+  @media (max-width:740px) {
+    /* the base rule sticks the sidebar and nowrap-stacks the stat band; neither survives
+       the single-column mobile layout, so reset both back to normal flow here */
+    aside { position:static; max-height:none; overflow:visible; }
+    .stats > div { display:block; }
+    .stats span { white-space:normal; }
+  }
+</style>
 </head>
 <body>
-<header><div class="brand"><span class="brandmark" aria-hidden="true">CE</span><span>College earnings <small>EXPLORER</small></span></div><button id="about">About the data</button></header>
+<nav><div class="nav-inner"><span class="nav-brand">Ritwik Sinha</span><ul class="nav-links">
+<li><a href="../../index.html">Home</a></li><li><a href="../../work.html">Research</a></li><li><a href="../../publications.html">Publications</a></li>
+<li><a href="../../patents.html">Patents</a></li><li><a href="../../family.html">Family</a></li><li><a href="../index.html" class="active">Blog</a></li></ul></div></nav>
 <div class="workspace">
 <aside aria-label="Filter programs">
 <h2>Explore programs</h2><p class="aside-intro">Filter reported programs, then compare their observed earnings outcomes.</p>
@@ -35,16 +72,17 @@
 <div class="source-note"><span>DATA SNAPSHOT</span><p>Federal earnings data<br>HEA Group · January 2026</p><small>Reportable programs only. A missing college or major does not mean it isn’t offered.</small></div>
 </aside>
 <main>
-<div class="title-row"><div><p class="eyebrow">FOUR YEARS AFTER COMPLETION</p><h1 id="heading">Political science</h1><p id="subheading">Bachelor’s programs across the United States</p></div><button id="download" class="download" disabled>Download CSV</button></div>
+<div class="title-row"><div><p class="eyebrow">FOUR YEARS AFTER COMPLETION</p><h1 id="heading">Political science</h1><p id="subheading">Bachelor’s programs across the United States</p></div><div class="title-actions"><button id="about" class="about-link">About the data</button><button id="download" class="download" disabled>Download CSV</button></div></div>
 <div class="stats" aria-live="polite"><div><span>Programs in view</span><strong id="count">—</strong></div><div><span>Median of program medians</span><strong id="median">—</strong></div><div><span>Program earnings range</span><strong id="range">—</strong></div></div>
 <p class="context">Median annual earnings of federal-aid recipients who were working and not enrolled in college. <button class="text-button" id="learn">How to read these numbers</button></p>
 <section class="results" aria-label="College program results">
 <div class="table-toolbar"><div><h2>College comparison</h2><span id="result-label" aria-live="polite">Loading the complete dataset…</span></div><label class="sort-label">Sort by<select id="sort"><option value="earn-desc">Highest earnings</option><option value="earn-asc">Lowest earnings</option><option value="name">College name</option><option value="cohort">Largest cohort</option><option value="premium">Largest gap vs. HS</option></select></label></div>
-<div class="table-scroll"><table><thead><tr><th class="select-col"><span class="sr-only">Compare</span></th><th>College / program</th><th class="number">Median earnings</th><th class="number optional">Gap vs. HS benchmark</th></tr></thead><tbody id="rows"><tr><td colspan="4" class="empty">Loading earnings data…</td></tr></tbody></table></div>
+<div class="table-scroll"><table><thead><tr><th class="select-col"><span class="sr-only">Compare</span></th><th>College / program</th><th class="number">Median earnings</th></tr></thead><tbody id="rows"><tr><td colspan="3" class="empty">Loading earnings data…</td></tr></tbody></table></div>
 <div class="pagination"><span id="page-label"></span><div><button id="prev" disabled>Previous</button><button id="next" disabled>Next</button></div></div>
 </section>
 <p class="footnote">Graduates completed their programs in 2017-18 or 2018-19. Earnings were measured in 2022 and 2023 and adjusted to 2024 dollars. College comparisons describe outcomes; they do not isolate a college’s effect on earnings.</p>
 </main></div>
+<footer>&copy; 2026 Ritwik Sinha &nbsp;·&nbsp; Cupertino, CA</footer>
 <div id="compare-tray" class="compare-tray" hidden><span id="compare-count"></span><div><button id="clear-compare">Clear</button><button id="show-compare" class="primary">Compare programs</button></div></div>
 <dialog id="about-dialog"><div class="dialog-head"><h2>About the data</h2><button data-close="about-dialog" aria-label="Close data explanation">Close</button></div><div class="dialog-body">
 <p>This explorer uses the HEA Group’s national undergraduate earnings dataset, published January 5, 2026. It contains <strong>32,578 reported associate and bachelor’s programs</strong>, including <strong>539 bachelor’s political science programs</strong>.</p>
